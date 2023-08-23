@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.9.1](https://github.com/Pianto81/fantasy-statblocks-metric/compare/3.9.0...3.9.1) (2023-08-23)
+
 ## [3.9.0](https://github.com/javalent/fantasy-statblocks/compare/3.8.4...3.9.0) (2023-08-18)
 
 
