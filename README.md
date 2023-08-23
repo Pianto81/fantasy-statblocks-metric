@@ -8,7 +8,7 @@
 
 Create, manage and view a Fantasy Bestiary in [Obsidian](https://obsidian.md/).
 
-<img src="https://raw.githubusercontent.com/valentine195/obsidian-5e-statblocks/beta/images/example.PNG">
+<img src="./images/example.PNG">
 
 # Usage
 
