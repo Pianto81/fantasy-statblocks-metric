@@ -22,14 +22,14 @@ import type { Monster } from "types";
 export const BESTIARY: Monster[] = [
     {
         name: "Aboleth",
-        size: "Large",
+        size: "G",
         type: "aberration",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 17,
         hp: 135,
         hit_dice: "18d10 + 36",
-        speed: "3 m., swim 12 m.",
+        speed: "3 m., nage 12 m.",
         stats: [21, 9, 15, 18, 15, 18],
         saves: [{ constitution: 6 }, { intelligence: 8 }, { wisdom: 6 }],
         skillsaves: [{ history: 12 }, { perception: 10 }],
@@ -37,76 +37,76 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 20",
-        languages: "Deep Speech, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 20",
+        languages: "Discours Profond, télépathie 36 m.",
         cr: "10",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The aboleth can breathe air and water.",
+                name: "Aphibien",
+                desc: "L'aboleth peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Mucous Cloud",
-                desc: "While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 1.5 m. of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.",
+                name: "Nuage de mucus",
+                desc: "Lorsqu'il est sous l'eau, l'aboleth est entouré d'un mucus altérant. Une créature qui touche l'aboleth ou qui le frappe lors d'une attaque au corps à corps en se trouvant à 1,50 mètre ou moins de lui, doit effectuer un jet de sauvegarde de Constitution DD 14. Si elle l'échoue, la créature tombe malade pour les 1d4 prochaines heures. Une créature malade ne peut respirer que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Probing Telepathy",
-                desc: "If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.",
+                name: "Pénétration Télépathique",
+                desc: " Si une créature communique par télépathie avec l'aboleth, l'aboleth découvre les plus grands désirs de la créature, à condition qu'il puisse voir la créature.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The aboleth makes three tentacle attacks.",
+                name: "Attaques multiples",
+                desc: "L'aboleth effectue trois attaques avec ses tentacules.",
                 attack_bonus: 0
             },
             {
-                name: "Tentacle",
-                desc: "Melee Weapon Attack: +9 to hit, reach 3 m., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
+                name: "Tentacule",
+                desc: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 12 (2d6 + 5) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 14 ou tomber malade. Cette maladie n'a aucun effet pendant 1 minute et peut être annulée par toute magie qui soigne les maladies. Après 1 minute, le teint de la créature malade devient translucide et visqueux, la créature ne peut pas récupérer de points de vie si elle n'est pas sous l'eau, et cette maladie ne peut plus être soignée que par guérison ou tout autre sort de guérison des maladies de niveau 6 ou supérieur. Lorsque la créature est en dehors d'une étendue d'eau, elle subit 6 (1d12) dégâts d'acide toutes les 10 minutes à moins que son corps ne soit humidifié avant que 10 minutes ne se soient écoulées.",
                 attack_bonus: 9,
                 damage_dice: "2d6",
                 damage_bonus: 5
             },
             {
-                name: "Tail",
-                desc: "Melee Weapon Attack: +9 to hit, reach 3 m. one target. Hit: 15 (3d6 + 5) bludgeoning damage.",
+                name: "Queue",
+                desc: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 15 (3d6 + 5) dégâts contondants.",
                 attack_bonus: 9,
                 damage_dice: "3d6",
                 damage_bonus: 5
             },
             {
-                name: "Enslave (3/day)",
-                desc: "The aboleth targets one creature it can see within 9 m. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1.6 km. away from the aboleth.",
+                name: "Asservissement (3/jour)",
+                desc: "L'aboleth cible une créature qu'il peut voir dans un rayon de 9 mètres autour de lui. La cible doit réussir un jet de sauvegarde de Sagesse DD 14 ou être charmée magiquement par l'aboleth jusqu'à ce que l'aboleth ne meure ou se trouve sur un plan d'existence différent de celui de la cible. La cible charmée est sous le contrôle de l'aboleth et ne peut pas utiliser de réaction, de plus l'aboleth et la cible peuvent communiquer par télépathie entre eux quelle que soit la distance. Chaque fois que la cible subit des dégâts, elle peut retenter son jet de sauvegarde. Si elle le réussit, l'effet se termine. Pas plus d'une fois toutes les 24 heures, la cible peut également retenter son jet de sauvegarde lorsqu'elle se trouve à plus de 1,5 kilomètre de l'aboleth.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The aboleth makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "L'aboleth effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Swipe",
-                desc: "The aboleth makes one tail attack.",
+                name: "Attaque avec la queue",
+                desc: "L'aboleth effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Psychic Drain (Costs 2 Actions)",
-                desc: "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.",
+                name: "Absorption psychique (coûte 2 actions)",
+                desc: "Une créature charmée par l'aboleth subit 10 (3d6) dégâts psychiques, et l'aboleth récupère un montant de point de vie égal aux dégâts que cette créature a subis.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Acolyte",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 10,
         hp: 9,
         hit_dice: "2d8",
@@ -117,34 +117,34 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 12",
+        languages: "une langue au choix (généralement le commun)",
         cr: "1/4",
         traits: [],
         actions: [
             {
-                name: "Club",
-                desc: "Melee Weapon Attack: +2 to hit, reach 1.5 m., one target. Hit: 2 (1d4) bludgeoning damage.",
+                name: "Gourdin",
+                desc: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants.",
                 attack_bonus: 2,
                 damage_dice: "1d4"
             }
         ],
         spells: [
-            "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:",
-            { "Cantrips (at will)": "light, sacred flame, thaumaturgy" },
-            { "1st level (3 slots)": "bless, cure wounds, sanctuary" }
+            "L'acolyte est un lanceur de sorts de niveau 1. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 12, +4 au toucher pour les attaques avec un sort). L'acolyte a préparé les sorts de clerc suivants :",
+            { "Sorts mineurs (à volonté)" : "flamme sacrée, lumière, thaumaturgie" },
+            { "Niveau 1 (3 emplacements)" : "bénédiction, sanctuaire, soins" }
         ]
     },
     {
-        name: "Adult Black Dragon",
-        size: "Huge",
+        name: "(Adulte) Dragon Noir",
+        size: "TG",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 19,
         hp: 195,
         hit_dice: "17d12 + 84",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., vol 24 m., nage 12 m.",
         stats: [23, 14, 21, 14, 13, 17],
         saves: [
             { dexterity: 7 },
@@ -155,90 +155,90 @@ export const BESTIARY: Monster[] = [
         skillsaves: [null, { perception: 11 }, { stealth: 7 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 21",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 21",
+        languages: "Commun, Draconique",
         cr: "14",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
-                desc: "Melee Weapon Attack: +11 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) acid damage.",
+                name: "Morsure",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants + 4 (1d8) dégâts d'acide.",
                 attack_bonus: 11,
                 damage_dice: "2d10 + 1d8",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
-                desc: "Melee Weapon Attack: +11 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
+                name: "Griffes",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.",
                 attack_bonus: 11,
                 damage_dice: "2d6",
                 damage_bonus: 6
             },
             {
-                name: "Tail",
-                desc: "Melee Weapon Attack: +11 to hit, reach 4.50 m., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+                name: "Queue",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.",
                 attack_bonus: 11,
                 damage_dice: "2d8",
                 damage_bonus: 6
             },
             {
-                name: "Frightful Presence",
-                desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+                name: "Présence Terrifiante",
+                desc: "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte si elle réussit. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
                 attack_bonus: 0
             },
             {
-                name: "Acid Breath (Recharge 5-6)",
-                desc: "The dragon exhales acid in a 18-meter line that is 1.5 meter wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.",
+                name: "Souffle d'acide (Recharge 5-6)",
+                desc: "Le dragon crache un jet d'acide sur une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 18, subissant 54 (12d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attack_bonus: 0,
                 damage_dice: "12d8"
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
-                desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                name: "Attaque avec les ailes (coûte 2 actions)",
+                desc: "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Adult Blue Dracolich",
-        size: "Huge",
+        size: "TG",
         type: "undead",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 19,
         hp: 225,
         hit_dice: "18d12 + 108",
-        speed: "12 m., burrow 9 m., fly 24 m.",
+        speed: "12 m., burrow 9 m., vol 24 m.",
         stats: [25, 10, 23, 16, 15, 19],
         skillsaves: [{ perception: 12 }],
         damage_vulnerabilities: "",
@@ -246,12 +246,12 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "lightning, poison",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, poisoned",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 22",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 22",
+        languages: "Commun, Draconique",
         cr: "17",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
+                name: "Résistance légendaire (3/jour)",
                 desc: "If the dracolich fails a saving throw, it can choose to succeed instead.",
                 attack_bonus: 0
             },
@@ -263,33 +263,33 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +12 to hit, reach 3 m., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.",
                 attack_bonus: 12,
                 damage_dice: "2d10 + 1d10",
                 damage_bonus: 7
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +12 to hit, reach 1.5 m., one target. Hit: 14 (2d6 + 7) slashing damage.",
                 attack_bonus: 12,
                 damage_dice: "2d6",
                 damage_bonus: 7
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +12 to hit, reach 4.50 m., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
                 attack_bonus: 12,
                 damage_dice: "2d8",
                 damage_bonus: 7
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dracolich's choice that is within 36 meters of the dracolich and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -302,17 +302,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
+                name: "Détection",
                 desc: "The dracolich makes a Wisdom (Perception) check.",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
+                name: "Attaque avec la queue",
                 desc: "The dracolich makes a tail attack.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dracolich beats its tattered wings. Each creature within 3 m. of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -320,10 +320,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult Blue Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 19,
         hp: 225,
         hit_dice: "18d12 + 108",
@@ -340,45 +340,45 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 22",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 22",
+        languages: "Commun, Draconique",
         cr: "16",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +12 to hit, reach 3 m., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.",
                 attack_bonus: 12,
                 damage_dice: "2d10 + 1d10",
                 damage_bonus: 7
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +12 to hit, reach 1.5 m., one target. Hit: 14 (2d6 + 7) slashing damage.",
                 attack_bonus: 12,
                 damage_dice: "2d6",
                 damage_bonus: 7
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +12 to hit, reach 4.50 m., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
                 attack_bonus: 12,
                 damage_dice: "2d8",
                 damage_bonus: 7
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 m. of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -391,17 +391,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -409,7 +409,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult Brass Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
         alignment: "chaotic good",
@@ -435,46 +435,46 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 21",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 21",
+        languages: "Commun, Draconique",
         cr: "13",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +11 to hit, reach,.0 m., one target. Hit: 17 (2d10 + 6) piercing damage.",
                 attack_bonus: 11,
                 damage_dice: "2d10",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
-                desc: "Melee Weapon Attack: +11 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
+                name: "Griffes",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.",
                 attack_bonus: 11,
                 damage_dice: "2d6",
                 damage_bonus: 6
             },
             {
-                name: "Tail",
-                desc: "Melee Weapon Attack: +11 to hit, reach 4.50 m., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+                name: "Queue",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.",
                 attack_bonus: 11,
                 damage_dice: "2d8",
                 damage_bonus: 6
             },
             {
-                name: "Frightful Presence",
-                desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+                name: "Présence Terrifiante",
+                desc: "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte si elle réussit. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
                 attack_bonus: 0
             },
             {
@@ -487,14 +487,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult Bronze Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
         ac: 19,
         hp: 212,
         hit_dice: "17d12 + 101",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [25, 10, 23, 16, 15, 19],
         saves: [
             { dexterity: 5 },
@@ -507,50 +507,50 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 22",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 22",
+        languages: "Commun, Draconique",
         cr: "15",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +12 to hit, reach 3 m., one target. Hit: 18 (2d10 + 7) piercing damage.",
                 attack_bonus: 12,
                 damage_dice: "2d10",
                 damage_bonus: 7
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +12 to hit, reach 1.5 m., one target. Hit: 14 (2d6 + 7) slashing damage.",
                 attack_bonus: 12,
                 damage_dice: "2d6",
                 damage_bonus: 7
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +12 to hit, reach 4.50 m., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
                 attack_bonus: 12,
                 damage_dice: "2d8",
                 damage_bonus: 7
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -563,17 +563,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -581,7 +581,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult Copper Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
         alignment: "chaotic good",
@@ -599,48 +599,48 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ deception: 8 }, { perception: 12 }, { stealth: 6 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 22",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 22",
+        languages: "Commun, Draconique",
         cr: "14",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +11 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage.",
                 attack_bonus: 11,
                 damage_dice: "2d10",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
-                desc: "Melee Weapon Attack: +11 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
+                name: "Griffes",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.",
                 attack_bonus: 11,
                 damage_dice: "2d6",
                 damage_bonus: 6
             },
             {
-                name: "Tail",
-                desc: "Melee Weapon Attack: +11 to hit, reach 4.50 m., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+                name: "Queue",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.",
                 attack_bonus: 11,
                 damage_dice: "2d8",
                 damage_bonus: 6
             },
             {
-                name: "Frightful Presence",
-                desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+                name: "Présence Terrifiante",
+                desc: "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte si elle réussit. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
                 attack_bonus: 0
             },
             {
@@ -652,32 +652,32 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
-                desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                name: "Attaque avec les ailes (coûte 2 actions)",
+                desc: "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Adult Gold Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
         ac: 19,
         hp: 256,
         hit_dice: "19d12 + 132",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [27, 14, 25, 16, 15, 24],
         saves: [
             { dexterity: 8 },
@@ -695,50 +695,50 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 24",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 24",
+        languages: "Commun, Draconique",
         cr: "17",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +14 to hit, reach 3 m., one target. Hit: 19 (2d10 + 8) piercing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d10",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +14 to hit, reach 1.5 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +14 to hit, reach 4.50 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 14,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -751,17 +751,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -769,14 +769,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult Green Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 19,
         hp: 207,
         hit_dice: "18d12 + 90",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [23, 12, 21, 18, 15, 17],
         saves: [
             { dexterity: 6 },
@@ -795,50 +795,50 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 22",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 22",
+        languages: "Commun, Draconique",
         cr: "15",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +11 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage plus 7 (2d6) poison damage.",
                 attack_bonus: 11,
                 damage_dice: "2d10 + 2d6",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
-                desc: "Melee Weapon Attack: +11 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
+                name: "Griffes",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.",
                 attack_bonus: 11,
                 damage_dice: "2d6",
                 damage_bonus: 6
             },
             {
-                name: "Tail",
-                desc: "Melee Weapon Attack: +11 to hit, reach 4.50 m., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+                name: "Queue",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.",
                 attack_bonus: 11,
                 damage_dice: "2d8",
                 damage_bonus: 6
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
                 attack_bonus: 0
             },
@@ -851,28 +851,28 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
-                desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                name: "Attaque avec les ailes (coûte 2 actions)",
+                desc: "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Adult Red Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 19,
         hp: 256,
         hit_dice: "19d12 + 132",
@@ -889,45 +889,45 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 23",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 23",
+        languages: "Commun, Draconique",
         cr: "17",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +14 to hit, reach 3 m., one target. Hit: 19 (2d10 + 8) piercing damage plus 7 (2d6) fire damage.",
                 attack_bonus: 14,
                 damage_dice: "2d10 + 2d6",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +14 to hit, reach 1.5 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +14 to hit, reach 4.50 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 14,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 m. of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -946,17 +946,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -964,7 +964,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult Silver Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
@@ -989,45 +989,45 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 21",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 21",
+        languages: "Commun, Draconique",
         cr: "16",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +13 to hit, reach 3 m., one target. Hit: 19 (2d10 + 8) piercing damage.",
                 attack_bonus: 13,
                 damage_dice: "2d10",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +13 to hit, reach 1.5 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 13,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +13 to hit, reach 4.50 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 13,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1040,17 +1040,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1058,14 +1058,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Adult White Dragon",
-        size: "Huge",
+        size: "TG",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 18,
         hp: 200,
         hit_dice: "16d12 + 96",
-        speed: "12 m., burrow 9 m., fly 24 m., swim 12 m.",
+        speed: "12 m., burrow 9 m., fly 24 m., nage 12 m.",
         stats: [22, 10, 22, 8, 12, 12],
         saves: [
             { dexterity: 5 },
@@ -1078,8 +1078,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 21",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 21",
+        languages: "Commun, Draconique",
         cr: "13",
         traits: [
             {
@@ -1088,40 +1088,40 @@ export const BESTIARY: Monster[] = [
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +11 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) cold damage.",
                 attack_bonus: 11,
                 damage_dice: "2d10 + 1d8",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
-                desc: "Melee Weapon Attack: +11 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
+                name: "Griffes",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.",
                 attack_bonus: 11,
                 damage_dice: "2d6",
                 damage_bonus: 6
             },
             {
-                name: "Tail",
-                desc: "Melee Weapon Attack: +11 to hit, reach 4.50 m., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+                name: "Queue",
+                desc: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.",
                 attack_bonus: 11,
                 damage_dice: "2d8",
                 damage_bonus: 6
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 m. of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1134,25 +1134,25 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
-                desc: "The dragon beats its wings. Each creature within 3 m. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                name: "Attaque avec les ailes (coûte 2 actions)",
+                desc: "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Air Elemental",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
         alignment: "neutral",
@@ -1167,7 +1167,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison",
         condition_immunities:
             "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Auran",
         cr: "5",
         traits: [
@@ -1179,7 +1179,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The elemental makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -1202,11 +1202,11 @@ export const BESTIARY: Monster[] = [
         size: "Gargantuan",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 22,
         hp: 367,
         hit_dice: "21d20 + 146",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [27, 14, 25, 16, 15, 19],
         saves: [
             { dexterity: 9 },
@@ -1217,74 +1217,74 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ perception: 16 }, { stealth: 9 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 26",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 26",
+        languages: "Commun, Draconique",
         cr: "21",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack:+ 15 to hit, reach 4.50 m., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) acid damage.",
                 attack_bonus: 15,
                 damage_dice: "2d10 + 2d8",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +15 to hit, reach 3 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 15,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +15 to hit, reach 20 ft ., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 15,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
             {
-                name: "Acid Breath (Recharge 5-6)",
+                name: "Souffle d'acide (Recharge 5-6)",
                 desc: "The dragon exhales acid in a 27 meter line that is 3 meters wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 67 (15d8) acid damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1295,7 +1295,7 @@ export const BESTIARY: Monster[] = [
         size: "Gargantuan",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 22,
         hp: 481,
         hit_dice: "26d20 + 208",
@@ -1312,38 +1312,38 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 27",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 27",
+        languages: "Commun, Draconique",
         cr: "23",
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +16 to hit, reach 4.50 m., one target. Hit: 20 (2d10 + 9) piercing damage plus 11 (2d10) lightning damage.",
                 attack_bonus: 16,
                 damage_dice: "2d10 + 2d10",
                 damage_bonus: 9
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +16 to hit, reach 3 m., one target. Hit: 16 (2d6 + 9) slashing damage.",
                 attack_bonus: 16,
                 damage_dice: "2d6",
                 damage_bonus: 9
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +16 to hit, reach 6 m., one target. Hit: 18 (2d8 + 9) bludgeoning damage.",
                 attack_bonus: 16,
                 damage_dice: "2d8",
                 damage_bonus: 9
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1356,17 +1356,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1399,45 +1399,45 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 24",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 24",
+        languages: "Commun, Draconique",
         cr: "20",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +14 to hit, reach 4.50 m., one target. Hit: 19 (2d10 + 8) piercing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d10",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +14 to hit, reach 3 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +14 to hit, reach 6 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 14,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1449,23 +1449,23 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                desc: "The dragon magically polymorphs into a humanoïde or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1480,7 +1480,7 @@ export const BESTIARY: Monster[] = [
         ac: 22,
         hp: 444,
         hit_dice: "24d20 + 192",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [29, 10, 27, 18, 17, 21],
         saves: [
             { dexterity: 7 },
@@ -1493,50 +1493,50 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 27",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 27",
+        languages: "Commun, Draconique",
         cr: "22",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +16 to hit, reach 4.50 m., one target. Hit: 20 (2d10 + 9) piercing damage.",
                 attack_bonus: 16,
                 damage_dice: "2d10",
                 damage_bonus: 9
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +16 to hit, reach 3 m., one target. Hit: 16 (2d6 + 9) slashing damage.",
                 attack_bonus: 16,
                 damage_dice: "1d6",
                 damage_bonus: 9
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +16 to hit, reach 6 m., one target. Hit: 18 (2d8 + 9) bludgeoning damage.",
                 attack_bonus: 0,
                 damage_dice: "2d8",
                 damage_bonus: 9
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1548,23 +1548,23 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                desc: "The dragon magically polymorphs into a humanoïde or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1590,47 +1590,47 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ stealth: 8 }, { perception: 17 }, { deception: 11 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 27",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 27",
+        languages: "Commun, Draconique",
         cr: "21",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +15 to hit, reach 4.50 m., one target. Hit: 19 (2d10 + 8) piercing damage.",
                 attack_bonus: 15,
                 damage_dice: "2d10",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +15 to hit, reach 3 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 15,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +15 to hit, reach 6 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 15,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1642,23 +1642,23 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                desc: "The dragon magically polymorphs into a humanoïde or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1673,7 +1673,7 @@ export const BESTIARY: Monster[] = [
         ac: 22,
         hp: 546,
         hit_dice: "28d20 + 252",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [30, 14, 29, 18, 17, 28],
         saves: [
             { dexterity: 9 },
@@ -1691,50 +1691,50 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 27",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 27",
+        languages: "Commun, Draconique",
         cr: "24",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +17 to hit, reach 4.50 m., one target. Hit: 21 (2d10 + 10) piercing damage.",
                 attack_bonus: 17,
                 damage_dice: "2d10",
                 damage_bonus: 10
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +17 to hit, reach 3 m., one target. Hit: 17 (2d6 + 10) slashing damage.",
                 attack_bonus: 17,
                 damage_dice: "2d6",
                 damage_bonus: 10
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +17 to hit, reach 6 m., one target. Hit: 19 (2d8 + 10) bludgeoning damage.",
                 attack_bonus: 17,
                 damage_dice: "2d8",
                 damage_bonus: 10
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 24 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1746,23 +1746,23 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                desc: "The dragon magically polymorphs into a humanoïde or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1773,11 +1773,11 @@ export const BESTIARY: Monster[] = [
         size: "Gargantuan",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 21,
         hp: 385,
         hit_dice: "22d20 + 154",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [27, 12, 25, 20, 17, 19],
         saves: [
             { dexterity: 8 },
@@ -1796,50 +1796,50 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 27",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 27",
+        languages: "Commun, Draconique",
         cr: "22",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +15 to hit, reach 4.50 m., one target. Hit: 19 (2d10 + 8) piercing damage plus 10 (3d6) poison damage.",
                 attack_bonus: 15,
                 damage_dice: "2d10 + 3d6",
                 damage_bonus: 9
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +15 to hit, reach 3 m., one target. Hit: 22 (4d6 + 8) slashing damage.",
                 attack_bonus: 15,
                 damage_dice: "4d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +15 to hit, reach 6 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 16,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1852,17 +1852,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1873,7 +1873,7 @@ export const BESTIARY: Monster[] = [
         size: "Gargantuan",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 22,
         hp: 546,
         hit_dice: "28d20 + 252",
@@ -1890,45 +1890,45 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 26",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 26",
+        languages: "Commun, Draconique",
         cr: "24",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +17 to hit, reach 4.50 m., one target. Hit: 21 (2d10 + 10) piercing damage plus 14 (4d6) fire damage.",
                 attack_bonus: 17,
                 damage_dice: "2d10 + 4d6",
                 damage_bonus: 10
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +17 to hit, reach 3 m., one target. Hit: 17 (2d6 + 10) slashing damage.",
                 attack_bonus: 17,
                 damage_dice: "2d6",
                 damage_bonus: 10
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +17 to hit, reach 6 m., one target. Hit: 19 (2d8 + 10) bludgeoning damage.",
                 attack_bonus: 17,
                 damage_dice: "2d8",
                 damage_bonus: 10
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -1941,17 +1941,17 @@ export const BESTIARY: Monster[] = [
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -1984,45 +1984,45 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 26",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 26",
+        languages: "Commun, Draconique",
         cr: "23",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +17 to hit, reach 4.50 m., one target. Hit: 21 (2d10 + 10) piercing damage.",
                 attack_bonus: 17,
                 damage_dice: "2d10",
                 damage_bonus: 10
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +17 to hit, reach 3 m., one target. Hit: 17 (2d6 + 10) slashing damage.",
                 attack_bonus: 17,
                 damage_dice: "2d6",
                 damage_bonus: 10
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +17 to hit, reach 6 m., one target. Hit: 19 (2d8 + 10) bludgeoning damage.",
                 attack_bonus: 17,
                 damage_dice: "2d8",
                 damage_bonus: 10
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -2034,23 +2034,23 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                desc: "The dragon magically polymorphs into a humanoïde or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
                 attack_bonus: 0
             }
         ],
         legendary_actions: [
             {
-                name: "Detect",
-                desc: "The dragon makes a Wisdom (Perception) check.",
+                name: "Détection",
+                desc: "Le dragon effectue un jet de Sagesse (Perception).",
                 attack_bonus: 0
             },
             {
-                name: "Tail Attack",
-                desc: "The dragon makes a tail attack.",
+                name: "Attaque avec la queue",
+                desc: "Le dragon effectue une attaque avec sa queue.",
                 attack_bonus: 0
             },
             {
-                name: "Wing Attack (Costs 2 Actions)",
+                name: "Attaque avec les ailes (coûte 2 actions)",
                 desc: "The dragon beats its wings. Each creature within 4.50 m. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
                 attack_bonus: 0
             }
@@ -2061,11 +2061,11 @@ export const BESTIARY: Monster[] = [
         size: "Gargantuan",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 20,
         hp: 333,
         hit_dice: "18d20 + 144",
-        speed: "12 m., burrow 12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., burrow 12 m., fly 24 m., nage 12 m.",
         stats: [26, 10, 26, 10, 13, 14],
         saves: [
             { dexterity: 6 },
@@ -2078,8 +2078,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 23",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 23",
+        languages: "Commun, Draconique",
         cr: "20",
         traits: [
             {
@@ -2088,40 +2088,40 @@ export const BESTIARY: Monster[] = [
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
-                desc: "If the dragon fails a saving throw, it can choose to succeed instead.",
+                name: "Résistance légendaire (3/jour)",
+                desc: "Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                name: "Attaques multiples",
+                desc: "Le dragon peut utiliser sa Présence terrifiante. Il effectue ensuite trois attaques : une de morsure et deux avec ses griffes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +14 to hit, reach 4.50 m., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) cold damage.",
                 attack_bonus: 14,
                 damage_dice: "2d10 + 2d8",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +14 to hit, reach 3 m., one target. Hit: 15 (2d6 + 8) slashing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d6",
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +14 to hit, reach 6 m., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
                 attack_bonus: 14,
                 damage_dice: "2d8",
                 damage_bonus: 8
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the dragon's choice that is within 36 meters of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
                 attack_bonus: 0
             },
@@ -2135,7 +2135,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Androsphinx",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "lawful neutral",
@@ -2156,7 +2156,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "psychic; bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities: "charmed, frightened",
-        senses: "truesight 36 m., passive Perception 20",
+        senses: "truesight 36 m., perception passive 20",
         languages: "Common, Sphinx",
         cr: "17",
         traits: [
@@ -2173,12 +2173,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The sphinx makes two claw attacks.",
                 attack_bonus: 0
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +12 to hit, reach 1.5 m., one target. Hit: 17 (2d10 + 6) slashing damage.",
                 attack_bonus: 12,
                 damage_dice: "2d10",
@@ -2226,7 +2226,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Animated Armor",
-        size: "Medium",
+        size: "M",
         type: "construct",
         subtype: "",
         alignment: "unaligned",
@@ -2240,7 +2240,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison, psychic",
         condition_immunities:
             "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 6",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 6",
         languages: "",
         cr: "1",
         traits: [
@@ -2257,7 +2257,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The armor makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -2272,7 +2272,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ankheg",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -2285,12 +2285,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., tremorsense 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., tremorsense 18 m., perception passive 11",
         languages: "",
         cr: "2",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.",
                 attack_bonus: 5,
                 damage_dice: "2d6 + 1d6",
@@ -2306,7 +2306,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ape",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -2320,12 +2320,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1/2",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The ape makes two fist attacks.",
                 attack_bonus: 0
             },
@@ -2347,10 +2347,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Archmage",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 12,
         hp: 99,
         hit_dice: "18d8 + 18",
@@ -2363,7 +2363,7 @@ export const BESTIARY: Monster[] = [
             "damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "any six languages",
         cr: "12",
         traits: [
@@ -2408,9 +2408,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Assassin",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any non-good alignment",
         ac: 15,
         hp: 78,
@@ -2428,7 +2428,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "poison",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "Thieves' cant plus any two languages",
         cr: "8",
         traits: [
@@ -2451,7 +2451,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The assassin makes two shortsword attacks.",
                 attack_bonus: 0
             },
@@ -2486,7 +2486,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "piercing",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "one language known by its creator",
         cr: "0",
         traits: [
@@ -2508,7 +2508,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Awakened Tree",
-        size: "Huge",
+        size: "TG",
         type: "plant",
         subtype: "",
         alignment: "unaligned",
@@ -2521,7 +2521,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "bludgeoning, piercing",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "one language known by its creator",
         cr: "2",
         traits: [
@@ -2543,7 +2543,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Axe Beak",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -2556,7 +2556,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/4",
         actions: [
@@ -2571,7 +2571,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Azer",
-        size: "Medium",
+        size: "M",
         type: "elemental",
         subtype: "",
         alignment: "lawful neutral",
@@ -2585,7 +2585,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "Ignan",
         cr: "2",
         traits: [
@@ -2631,7 +2631,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "",
         cr: "0",
         traits: [
@@ -2643,7 +2643,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +1 to hit, reach 1.5 m., one target. Hit: 1 (1d4 — 1) piercing damage.",
                 attack_bonus: 1,
                 damage_dice: "1d4",
@@ -2666,7 +2666,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 11",
+        senses: "vision dans le noir 9 m., perception passive 11",
         languages: "",
         cr: "0",
         traits: [
@@ -2678,7 +2678,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +2 to hit, reach 1.5 m., one target. Hit: 1 piercing damage.",
                 attack_bonus: 2,
                 damage_bonus: 1
@@ -2687,10 +2687,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Balor",
-        size: "Huge",
+        size: "TG",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 19,
         hp: 262,
         hit_dice: "21d12 + 125",
@@ -2707,8 +2707,8 @@ export const BESTIARY: Monster[] = [
             "cold, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "truesight 36 m., passive Perception 13",
-        languages: "Abyssal, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 13",
+        languages: "Abyssal, télépathie 36 m.",
         cr: "19",
         traits: [
             {
@@ -2736,7 +2736,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The balor makes two attacks: one with its longsword and one with its whip.",
                 attack_bonus: 0
             },
@@ -2768,9 +2768,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bandit",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any non-lawful alignment",
         ac: 12,
         hp: 11,
@@ -2781,8 +2781,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 10",
+        languages: "une langue au choix (généralement le commun)",
         cr: "1/8",
         actions: [
             {
@@ -2803,9 +2803,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bandit Captain",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any non-lawful alignment",
         ac: 15,
         hp: 65,
@@ -2818,12 +2818,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "any two languages",
         cr: "2",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
                 attack_bonus: 0
             },
@@ -2852,10 +2852,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Barbed Devil",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 15,
         hp: 110,
         hit_dice: "13d8 + 51",
@@ -2873,8 +2873,8 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 18",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 18",
+        languages: "Infernal, télépathie 36 m.",
         cr: "5",
         traits: [
             {
@@ -2885,7 +2885,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the devil's darkvision.",
+                desc: "Magical darkness doesn't impede the devil's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -2896,19 +2896,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.",
                 attack_bonus: 0
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +6 to hit, reach 5 ft ., one target. Hit: 6 (1d6 + 3) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d6",
                 damage_bonus: 3
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "2d6",
@@ -2924,7 +2924,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Basilisk",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -2937,7 +2937,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "",
         cr: "3",
         traits: [
@@ -2949,7 +2949,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.",
                 attack_bonus: 5,
                 damage_dice: "2d6 + 2d6",
@@ -2972,13 +2972,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 18 m., passive Perception 11",
+        senses: "vision aveugle 18 m., perception passive 11",
         languages: "",
         cr: "0",
         traits: [
             {
                 name: "Echolocation",
-                desc: "The bat can't use its blindsight while deafened.",
+                desc: "The bat can't use its vision aveugle while deafened.",
                 attack_bonus: 0
             },
             {
@@ -2989,7 +2989,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +0 to hit, reach 1.5 m., one creature. Hit: 1 piercing damage.",
                 attack_bonus: 0,
                 damage_bonus: 1
@@ -2998,10 +2998,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bearded Devil",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 13,
         hp: 52,
         hit_dice: "8d8 + 16",
@@ -3013,13 +3013,13 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 10",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 10",
+        languages: "Infernal, télépathie 36 m.",
         cr: "3",
         traits: [
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the devil's darkvision.",
+                desc: "Magical darkness doesn't impede the devil's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -3035,7 +3035,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes two attacks: one with its beard and one with its glaive.",
                 attack_bonus: 0
             },
@@ -3057,7 +3057,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Behir",
-        size: "Huge",
+        size: "TG",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral evil",
@@ -3071,17 +3071,17 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "darkvision 27 m., passive Perception 16",
+        senses: "vision dans le noir 27 m., perception passive 16",
         languages: "Draconic",
         cr: "11",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The behir makes two attacks: one with its bite and one to constrict.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 22 (3d10 + 6) piercing damage.",
                 attack_bonus: 10,
                 damage_dice: "3d10",
@@ -3110,9 +3110,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Berserker",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any chaotic alignment",
         ac: 13,
         hp: 67,
@@ -3123,8 +3123,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 10",
+        languages: "une langue au choix (généralement le commun)",
         cr: "2",
         traits: [
             {
@@ -3145,7 +3145,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Black Bear",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -3158,7 +3158,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1/2",
         traits: [
@@ -3170,12 +3170,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The bear makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 5 (1d6 + 2) piercing damage.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -3192,14 +3192,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Black Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 17,
         hp: 33,
         hit_dice: "6d8 + 6",
-        speed: "9 m., fly 18 m., swim 9 m.",
+        speed: "9 m., fly 18 m., nage 9 m.",
         stats: [15, 14, 13, 10, 11, 13],
         saves: [
             { dexterity: 4 },
@@ -3210,28 +3210,28 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ perception: 4 }, { stealth: 4 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "2",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.",
                 attack_bonus: 4,
                 damage_dice: "1d10",
                 damage_bonus: 2
             },
             {
-                name: "Acid Breath (Recharge 5-6)",
+                name: "Souffle d'acide (Recharge 5-6)",
                 desc: "The dragon exhales acid in a 4.5-meter line that is 1.5 meter wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (Sd8) acid damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 0,
                 damage_dice: "5d8"
@@ -3240,7 +3240,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Black Pudding",
-        size: "Large",
+        size: "G",
         type: "ooze",
         subtype: "",
         alignment: "unaligned",
@@ -3254,7 +3254,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "acid, cold, lightning, slashing",
         condition_immunities:
             "blinded, charmed, deafened, exhaustion, frightened, prone",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 8",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 8",
         languages: "",
         cr: "4",
         traits: [
@@ -3294,7 +3294,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Blink Dog",
-        size: "Medium",
+        size: "M",
         type: "fey",
         subtype: "",
         alignment: "lawful good",
@@ -3308,7 +3308,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "Blink Dog, understands Sylvan but can't speak it",
         cr: "1/4",
         traits: [
@@ -3320,7 +3320,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 4 (1d6 + 1) piercing damage.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -3349,7 +3349,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "1/8",
         traits: [
@@ -3376,10 +3376,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Blue Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 17,
         hp: 52,
         hit_dice: "8d8 + 16",
@@ -3396,12 +3396,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "3",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.",
                 attack_bonus: 5,
                 damage_dice: "1d10 + 1d6",
@@ -3417,7 +3417,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Boar",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -3430,7 +3430,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 9",
+        senses: "perception passive 9",
         languages: "",
         cr: "1/4",
         traits: [
@@ -3458,10 +3458,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bone Devil",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 19,
         hp: 142,
         hit_dice: "15d10 + 59",
@@ -3474,13 +3474,13 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 9",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 9",
+        languages: "Infernal, télépathie 36 m.",
         cr: "12",
         traits: [
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the devil's darkvision.",
+                desc: "Magical darkness doesn't impede the devil's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -3491,24 +3491,24 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes three attacks: two with its claws and one with its sting.",
                 attack_bonus: 0
             },
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes three attacks: two with its claws and one with its sting.",
                 attack_bonus: 0
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +8 to hit, reach 3 m., one target. Hit: 8 (1d8 + 4) slashing damage.",
                 attack_bonus: 8,
                 damage_dice: "1d8",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +8 to hit, reach 3 m., one target. Hit: 8 (1d8 + 4) slashing damage.",
                 attack_bonus: 8,
                 damage_dice: "1d8",
@@ -3532,7 +3532,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Brass Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
         alignment: "chaotic good",
@@ -3552,12 +3552,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "1",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (1d10 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d10",
@@ -3573,14 +3573,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bronze Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
         ac: 17,
         hp: 32,
         hit_dice: "5d8 + 9",
-        speed: "9 m., fly 18 m., swim 9 m.",
+        speed: "9 m., fly 18 m., nage 9 m.",
         stats: [17, 10, 15, 12, 11, 15],
         saves: [
             { dexterity: 2 },
@@ -3593,19 +3593,19 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "2",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 8 (1d10 + 3) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d10",
@@ -3621,7 +3621,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Brown Bear",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -3635,7 +3635,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1",
         traits: [
@@ -3647,12 +3647,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The bear makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 8 (1d8 + 4) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d8",
@@ -3669,10 +3669,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bugbear",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "goblinoid",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 16,
         hp: 27,
         hit_dice: "5d8 + 4",
@@ -3683,7 +3683,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Common, Goblin",
         cr: "1",
         traits: [
@@ -3718,7 +3718,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Bulette",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -3732,7 +3732,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., tremorsense 18 m., passive Perception 16",
+        senses: "vision dans le noir 18 m., tremorsense 18 m., perception passive 16",
         languages: "",
         cr: "5",
         traits: [
@@ -3744,7 +3744,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 30 (4d12 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "4d12",
@@ -3759,7 +3759,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Camel",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -3772,12 +3772,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 9",
+        senses: "perception passive 9",
         languages: "",
         cr: "1/8",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 2 (1d4) bludgeoning damage.",
                 attack_bonus: 5,
                 damage_dice: "1d4"
@@ -3786,7 +3786,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Carrion Crawler",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -3800,7 +3800,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "2",
         traits: [
@@ -3817,7 +3817,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The carrion crawler makes two attacks: one with its tentacles and one with its bite.",
                 attack_bonus: 0
             },
@@ -3829,7 +3829,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 2
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (2d4 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "2d4",
@@ -3853,7 +3853,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -3874,21 +3874,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Cave Bear",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 42,
         hit_dice: "5d10 + 14",
-        speed: "12 m., swim 9 m.",
+        speed: "12 m., nage 9 m.",
         stats: [20, 10, 16, 2, 13, 7],
         skillsaves: [{ perception: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "2",
         traits: [
@@ -3900,12 +3900,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The bear makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 9 (1d8 + 5) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "1d8",
@@ -3922,7 +3922,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Centaur",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral good",
@@ -3936,7 +3936,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "Elvish, Sylvan",
         cr: "2",
         traits: [
@@ -3949,7 +3949,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.",
                 attack_bonus: 0
             },
@@ -3978,10 +3978,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Chain Devil",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 16,
         hp: 85,
         hit_dice: "10d8 + 40",
@@ -3992,13 +3992,13 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 8",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 8",
+        languages: "Infernal, télépathie 36 m.",
         cr: "11",
         traits: [
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the devil's darkvision.",
+                desc: "Magical darkness doesn't impede the devil's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -4009,7 +4009,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes two attacks with its chains.",
                 attack_bonus: 0
             },
@@ -4036,10 +4036,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Chimera",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 14,
         hp: 114,
         hit_dice: "12d10 + 48",
@@ -4050,17 +4050,17 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 18",
+        senses: "vision dans le noir 18 m., perception passive 18",
         languages: "understands Draconic but can't speak",
         cr: "6",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -4090,26 +4090,26 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Chuul",
-        size: "Large",
+        size: "G",
         type: "aberration",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 16,
         hp: 93,
         hit_dice: "11d10 + 32",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [19, 10, 16, 5, 11, 5],
         skillsaves: [{ perception: 4 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 14",
-        languages: "understands Deep Speech but can't speak",
+        senses: "vision dans le noir 18 m., perception passive 14",
+        languages: "understands Discours Profond but can't speak",
         cr: "4",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The chuul can breathe air and water.",
                 attack_bonus: 0
             },
@@ -4121,7 +4121,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.",
                 attack_bonus: 0
             },
@@ -4141,7 +4141,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Clay Golem",
-        size: "Large",
+        size: "G",
         type: "construct",
         subtype: "",
         alignment: "unaligned",
@@ -4156,7 +4156,7 @@ export const BESTIARY: Monster[] = [
             "acid, poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "understands the languages of its creator but can't speak",
         cr: "9",
         traits: [
@@ -4188,7 +4188,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The golem makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -4208,7 +4208,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Cloaker",
-        size: "Large",
+        size: "G",
         type: "aberration",
         subtype: "",
         alignment: "chaotic neutral",
@@ -4222,8 +4222,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 11",
-        languages: "Deep Speech, Undercommon",
+        senses: "vision dans le noir 18 m., perception passive 11",
+        languages: "Discours Profond, Undercommon",
         cr: "8",
         traits: [
             {
@@ -4244,19 +4244,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The cloaker makes two attacks: one with its bite and one with its tail.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one creature. Hit: 10 (2d6 + 3) piercing damage, and if the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage against the target, the cloaker attaches to the target's head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 1.5 meter of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a DC 16 Strength check.",
                 attack_bonus: 6,
                 damage_dice: "2d6",
                 damage_bonus: 3
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +6 to hit, reach 3 m., one creature. Hit: 7 (1d8 + 3) slashing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d8",
@@ -4276,7 +4276,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Cloud Giant",
-        size: "Huge",
+        size: "TG",
         type: "giant",
         subtype: "",
         alignment: "neutral good (50%) or neutral evil (50%)",
@@ -4291,7 +4291,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 17",
+        senses: "perception passive 17",
         languages: "Common, Giant",
         cr: "9",
         traits: [
@@ -4308,7 +4308,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The giant makes two morningstar attacks.",
                 attack_bonus: 0
             },
@@ -4343,12 +4343,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "",
         cr: "1/2",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.",
                 attack_bonus: 3,
                 damage_dice: "1d4",
@@ -4358,10 +4358,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Commoner",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 10,
         hp: 4,
         hit_dice: "1d8 + -1",
@@ -4371,13 +4371,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 10",
+        languages: "une langue au choix (généralement le commun)",
         cr: "0",
         actions: [
             {
-                name: "Club",
-                desc: "Melee Weapon Attack: +2 to hit, reach 1.5 m., one target. Hit: 2 (1d4) bludgeoning damage.",
+                name: "Gourdin",
+                desc: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants.",
                 attack_bonus: 2,
                 damage_dice: "1d4"
             }
@@ -4385,25 +4385,25 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Constrictor Snake",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 13,
         hit_dice: "2d10 + 2",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [15, 14, 12, 1, 10, 3],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., passive Perception 10",
+        senses: "vision aveugle 3 m., perception passive 10",
         languages: "",
         cr: "1/4",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 5 (1d6 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
@@ -4420,7 +4420,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Copper Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
         alignment: "chaotic good",
@@ -4438,14 +4438,14 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ perception: 4 }, { stealth: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "1",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (1d10 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d10",
@@ -4461,7 +4461,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Couatl",
-        size: "Medium",
+        size: "M",
         type: "celestial",
         subtype: "",
         alignment: "lawful good",
@@ -4476,8 +4476,8 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "psychic; bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities: "",
-        senses: "truesight 36 m., passive Perception 15",
-        languages: "all, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 15",
+        languages: "all, télépathie 36 m.",
         cr: "4",
         traits: [
             {
@@ -4498,7 +4498,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +8 to hit, reach 1.5 m., one creature. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.",
                 attack_bonus: 8,
                 damage_dice: "1d6",
@@ -4513,7 +4513,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).\nIn a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.",
+                desc: "The couatl magically polymorphs into a humanoïde or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).\nIn a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.",
                 attack_bonus: 0
             }
         ]
@@ -4527,26 +4527,26 @@ export const BESTIARY: Monster[] = [
         ac: 11,
         hp: 2,
         hit_dice: "1d4",
-        speed: "6 m., swim 6 m.",
+        speed: "6 m., nage 6 m.",
         stats: [2, 11, 10, 1, 8, 2],
         skillsaves: [{ stealth: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 9 m., passive Perception 9",
+        senses: "vision aveugle 9 m., perception passive 9",
         languages: "",
         cr: "0",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The crab can breathe air and water.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +0 to hit, reach 1.5 m., one target. Hit: 1 bludgeoning damage.",
                 attack_bonus: 0,
                 damage_bonus: 1
@@ -4555,21 +4555,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Crocodile",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 19,
         hit_dice: "3d10 + 2",
-        speed: "6 m., swim 6 m.",
+        speed: "6 m., nage 6 m.",
         stats: [15, 10, 13, 2, 10, 5],
         skillsaves: [{ stealth: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/2",
         traits: [
@@ -4581,7 +4581,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target",
                 attack_bonus: 4,
                 damage_dice: "1d10",
@@ -4591,9 +4591,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Cult Fanatic",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any non-good alignment",
         ac: 13,
         hp: 22,
@@ -4605,8 +4605,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 11",
+        languages: "une langue au choix (généralement le commun)",
         cr: "2",
         traits: [
             {
@@ -4617,7 +4617,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The fanatic makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -4641,9 +4641,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Cultist",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any non-good alignment",
         ac: 12,
         hp: 9,
@@ -4655,8 +4655,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 10",
+        languages: "une langue au choix (généralement le commun)",
         cr: "1/8",
         traits: [
             {
@@ -4691,13 +4691,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 18 m., passive Perception 10",
+        senses: "vision aveugle 18 m., perception passive 10",
         languages: "",
         cr: "1/2",
         traits: [
             {
                 name: "Echolocation",
-                desc: "The darkmantle can't use its blindsight while deafened.",
+                desc: "The darkmantle can't use its vision aveugle while deafened.",
                 attack_bonus: 0
             },
             {
@@ -4723,7 +4723,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Death Dog",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral evil",
@@ -4737,7 +4737,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 15",
+        senses: "vision dans le noir 36 m., perception passive 15",
         languages: "",
         cr: "1",
         traits: [
@@ -4749,12 +4749,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dog makes two bite attacks.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
@@ -4765,7 +4765,7 @@ export const BESTIARY: Monster[] = [
     {
         name: "Deep Gnome (Svirfneblin)",
         size: "Small",
-        type: "humanoid",
+        type: "humanoïde",
         subtype: "gnome",
         alignment: "neutral good",
         ac: 15,
@@ -4778,7 +4778,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 12",
+        senses: "vision dans le noir 36 m., perception passive 12",
         languages: "Gnomish, Terran, Undercommon",
         cr: "1/2",
         traits: [
@@ -4817,7 +4817,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Deer",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -4830,12 +4830,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "",
         cr: "0",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +2 to hit, reach 1.5 m., one target. Hit: 2 (1d4) piercing damage.",
                 attack_bonus: 2,
                 damage_dice: "1d4"
@@ -4844,7 +4844,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Deva",
-        size: "Medium",
+        size: "M",
         type: "celestial",
         subtype: "",
         alignment: "lawful good",
@@ -4860,8 +4860,8 @@ export const BESTIARY: Monster[] = [
             "radiant; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "",
         condition_immunities: "charmed, exhaustion, frightened",
-        senses: "darkvision 36 m., passive Perception 19",
-        languages: "all, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 19",
+        languages: "all, télépathie 36 m.",
         cr: "10",
         traits: [
             {
@@ -4882,7 +4882,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The deva makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -4900,14 +4900,14 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).\nIn a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
+                desc: "The deva magically polymorphs into a humanoïde or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).\nIn a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Dire Wolf",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -4921,7 +4921,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1",
         traits: [
@@ -4938,7 +4938,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
                 attack_bonus: 5,
                 damage_dice: "2d6",
@@ -4948,7 +4948,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Djinni",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
         alignment: "chaotic good",
@@ -4962,7 +4962,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning, thunder",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 13",
+        senses: "vision dans le noir 36 m., perception passive 13",
         languages: "Auran",
         cr: "11",
         traits: [
@@ -4984,7 +4984,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The djinni makes three scimitar attacks.",
                 attack_bonus: 0
             },
@@ -5004,7 +5004,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Doppelganger",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "shapechanger",
         alignment: "unaligned",
@@ -5018,13 +5018,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "charmed",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "Common",
         cr: "3",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The doppelganger can use its action to polymorph into a Small or Medium humanoïde it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -5041,7 +5041,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The doppelganger makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -5061,7 +5061,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Draft Horse",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -5074,7 +5074,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/4",
         actions: [
@@ -5096,45 +5096,45 @@ export const BESTIARY: Monster[] = [
         ac: 20,
         hp: 341,
         hit_dice: "22d20 + 110",
-        speed: "6 m., swim 12 m.",
+        speed: "6 m., nage 12 m.",
         stats: [25, 10, 20, 10, 12, 12],
         saves: [{ dexterity: 6 }, { constitution: 11 }, { wisdom: 7 }],
         damage_vulnerabilities: "",
         damage_resistances: "fire",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 11",
+        senses: "vision dans le noir 36 m., perception passive 11",
         languages: "Aquan, Draconic",
         cr: "17",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The dragon turtle can breathe air and water.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +13 to hit, reach 4.50 m., one target. Hit: 26 (3d12 + 7) piercing damage.",
                 attack_bonus: 13,
                 damage_dice: "3d12",
                 damage_bonus: 7
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +13 to hit, reach 3 m., one target. Hit: 16 (2d8 + 7) slashing damage.",
                 attack_bonus: 13,
                 damage_dice: "2d8",
                 damage_bonus: 7
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +13 to hit, reach 4.50 m., one target. Hit: 26 (3d12 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 3 meters away from the dragon turtle and knocked prone.",
                 attack_bonus: 13,
                 damage_dice: "3d12",
@@ -5153,7 +5153,7 @@ export const BESTIARY: Monster[] = [
         size: "Small",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 11,
         hp: 18,
         hit_dice: "4d6 + 4",
@@ -5163,18 +5163,18 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "cold, fire, lightning",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages:
-            "Abyssal, telepathy 18 m. (works only with creatures that understand Abyssal)",
+            "Abyssal, télépathie 18 m. (works only with creatures that understand Abyssal)",
         cr: "1/4",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dretch makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +2 to hit, reach 1.5 m., one target. Hit: 3 (1d6) piercing damage.",
                 attack_bonus: 2,
                 damage_dice: "1d6"
@@ -5194,10 +5194,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Drider",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 19,
         hp: 123,
         hit_dice: "13d10 + 51",
@@ -5208,7 +5208,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 15",
+        senses: "vision dans le noir 36 m., perception passive 15",
         languages: "Elvish, Undercommon",
         cr: "6",
         traits: [
@@ -5240,12 +5240,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.",
                 attack_bonus: 6,
                 damage_dice: "1d4",
@@ -5269,8 +5269,8 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Drow",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "elf",
         alignment: "neutral evil",
         ac: 15,
@@ -5283,7 +5283,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 12",
+        senses: "vision dans le noir 36 m., perception passive 12",
         languages: "Elvish, Undercommon",
         cr: "1/4",
         traits: [
@@ -5322,10 +5322,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Druid",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 11,
         hp: 27,
         hit_dice: "5d8 + 4",
@@ -5336,7 +5336,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "Druidic plus any two languages",
         cr: "2",
         traits: [],
@@ -5360,7 +5360,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Dryad",
-        size: "Medium",
+        size: "M",
         type: "fey",
         subtype: "",
         alignment: "neutral",
@@ -5374,7 +5374,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Elvish, Sylvan",
         cr: "1",
         traits: [
@@ -5401,24 +5401,24 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Club",
+                name: "Gourdin",
                 desc: "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 1.5 m., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
                 attack_bonus: 2,
                 damage_dice: "1d4"
             },
             {
                 name: "Fey Charm",
-                desc: "The dryad targets one humanoid or beast that she can see within 9 meters of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\nThe dryad can have no more than one humanoid and up to three beasts charmed at a time.",
+                desc: "The dryad targets one humanoïde or beast that she can see within 9 meters of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\nThe dryad can have no more than one humanoïde and up to three beasts charmed at a time.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Duergar",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "dwarf",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 16,
         hp: 26,
         hit_dice: "4d8 + 8",
@@ -5428,7 +5428,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "poison",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 10",
+        senses: "vision dans le noir 36 m., perception passive 10",
         languages: "Dwarvish, Undercommon",
         cr: "1",
         traits: [
@@ -5486,7 +5486,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "Auran, Terran",
         cr: "1/2",
         traits: [
@@ -5537,7 +5537,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "0",
         traits: [
@@ -5559,7 +5559,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Earth Elemental",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
         alignment: "neutral",
@@ -5574,7 +5574,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison",
         condition_immunities:
             "exhaustion, paralyzed, petrified, poisoned, unconscious",
-        senses: "darkvision 18 m., tremorsense 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., tremorsense 18 m., perception passive 10",
         languages: "Terran",
         cr: "5",
         traits: [
@@ -5591,7 +5591,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The elemental makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -5606,10 +5606,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Efreeti",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 17,
         hp: 200,
         hit_dice: "16d10 + 112",
@@ -5620,7 +5620,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 12",
+        senses: "vision dans le noir 36 m., perception passive 12",
         languages: "Ignan",
         cr: "11",
         traits: [
@@ -5642,7 +5642,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The efreeti makes two scimitar attacks or uses its Hurl Flame twice.",
                 attack_bonus: 0
             },
@@ -5663,7 +5663,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Elephant",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -5676,7 +5676,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "4",
         traits: [
@@ -5705,7 +5705,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Elk",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -5718,7 +5718,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/4",
         traits: [
@@ -5744,10 +5744,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Erinyes",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 153,
         hit_dice: "18d8 + 72",
@@ -5764,8 +5764,8 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "truesight 36 m., passive Perception 12",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 12",
+        languages: "Infernal, télépathie 36 m.",
         cr: "12",
         traits: [
             {
@@ -5781,7 +5781,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The erinyes makes three attacks",
                 attack_bonus: 0
             },
@@ -5815,7 +5815,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ettercap",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral evil",
@@ -5829,7 +5829,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "2",
         traits: [
@@ -5851,12 +5851,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The ettercap makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 6 (1d8 + 2) piercing damage plus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
                 attack_bonus: 4,
                 damage_dice: "1d8",
@@ -5885,10 +5885,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ettin",
-        size: "Large",
+        size: "G",
         type: "giant",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 12,
         hp: 85,
         hit_dice: "10d10 + 30",
@@ -5899,7 +5899,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Giant, Orc",
         cr: "4",
         traits: [
@@ -5916,7 +5916,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The ettin makes two attacks: one with its battleaxe and one with its morningstar.",
                 attack_bonus: 0
             },
@@ -5938,7 +5938,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Fire Elemental",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
         alignment: "neutral",
@@ -5953,7 +5953,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "fire, poison",
         condition_immunities:
             "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Ignan",
         cr: "5",
         traits: [
@@ -5976,7 +5976,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The elemental makes two touch attacks.",
                 attack_bonus: 0
             },
@@ -5991,10 +5991,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Fire Giant",
-        size: "Huge",
+        size: "TG",
         type: "giant",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 162,
         hit_dice: "13d12 + 77",
@@ -6006,12 +6006,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "passive Perception 16",
+        senses: "perception passive 16",
         languages: "Giant",
         cr: "9",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The giant makes two greatsword attacks.",
                 attack_bonus: 0
             },
@@ -6033,7 +6033,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Flesh Golem",
-        size: "Medium",
+        size: "M",
         type: "construct",
         subtype: "",
         alignment: "neutral",
@@ -6048,7 +6048,7 @@ export const BESTIARY: Monster[] = [
             "lightning, poison; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "understands the languages of its creator but can't speak",
         cr: "5",
         traits: [
@@ -6085,7 +6085,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The golem makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -6107,13 +6107,13 @@ export const BESTIARY: Monster[] = [
         ac: 14,
         hp: 5,
         hit_dice: "2d4",
-        speed: "9 m., fly 18 m., swim 9 m.",
+        speed: "9 m., fly 18 m., nage 9 m.",
         stats: [4, 18, 11, 2, 12, 5],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., passive Perception 11",
+        senses: "vision aveugle 3 m., perception passive 11",
         languages: "",
         cr: "1/8",
         traits: [
@@ -6125,7 +6125,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
                 attack_bonus: 6,
                 damage_bonus: 1
@@ -6149,7 +6149,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison, psychic",
         condition_immunities:
             "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 7",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 7",
         languages: "",
         cr: "1/4",
         traits: [
@@ -6183,19 +6183,19 @@ export const BESTIARY: Monster[] = [
         ac: 11,
         hp: 1,
         hit_dice: "1d4 + -2",
-        speed: "6 m., swim 6 m.",
+        speed: "6 m., nage 6 m.",
         stats: [1, 13, 8, 1, 8, 3],
         skillsaves: [{ perception: 1 }, { stealth: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 11",
+        senses: "vision dans le noir 9 m., perception passive 11",
         languages: "",
         cr: "0",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The frog can breathe air and water",
                 attack_bonus: 0
             },
@@ -6208,7 +6208,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Frost Giant",
-        size: "Huge",
+        size: "TG",
         type: "giant",
         subtype: "",
         alignment: "neutral evil",
@@ -6223,12 +6223,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "Giant",
         cr: "8",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The giant makes two greataxe attacks.",
                 attack_bonus: 0
             },
@@ -6250,10 +6250,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gargoyle",
-        size: "Medium",
+        size: "M",
         type: "elemental",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 15,
         hp: 52,
         hit_dice: "7d8 + 20",
@@ -6264,7 +6264,7 @@ export const BESTIARY: Monster[] = [
             "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
         damage_immunities: "poison",
         condition_immunities: "exhaustion, petrified, poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Terran",
         cr: "2",
         traits: [
@@ -6276,12 +6276,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The gargoyle makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 5 (1d6 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
@@ -6298,7 +6298,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gelatinous Cube",
-        size: "Large",
+        size: "G",
         type: "ooze",
         subtype: "",
         alignment: "unaligned",
@@ -6312,7 +6312,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "blinded, charmed, deafened, exhaustion, frightened, prone",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 8",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 8",
         languages: "",
         cr: "2",
         traits: [
@@ -6343,10 +6343,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ghast",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 13,
         hp: 36,
         hit_dice: "8d8",
@@ -6356,7 +6356,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "necrotic",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Common",
         cr: "2",
         traits: [
@@ -6373,7 +6373,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one creature. Hit: 12 (2d8 + 3) piercing damage.",
                 attack_bonus: 3,
                 damage_dice: "2d8",
@@ -6390,10 +6390,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ghost",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "any alignment",
+        alignment: "tout alignement",
         ac: 11,
         hp: 45,
         hit_dice: "10d8",
@@ -6405,7 +6405,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "cold, necrotic, poison",
         condition_immunities:
             "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "any languages it knew in life",
         cr: "4",
         traits: [
@@ -6440,17 +6440,17 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Possession (Recharge 6)",
-                desc: "One humanoid that the ghost can see within 1.5 m. of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.\nThe possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 1.5 m. of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.",
+                desc: "One humanoïde that the ghost can see within 1.5 m. of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.\nThe possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 1.5 m. of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Ghoul",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 12,
         hp: 22,
         hit_dice: "5d8 + -1",
@@ -6460,12 +6460,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Common",
         cr: "1",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +2 to hit, reach 1.5 m., one creature. Hit: 9 (2d6 + 2) piercing damage.",
                 attack_bonus: 2,
                 damage_dice: "2d6",
@@ -6480,7 +6480,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Ape",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -6494,12 +6494,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "7",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The ape makes two fist attacks.",
                 attack_bonus: 0
             },
@@ -6521,7 +6521,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Badger",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -6534,7 +6534,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 11",
+        senses: "vision dans le noir 9 m., perception passive 11",
         languages: "",
         cr: "1/4",
         traits: [
@@ -6546,12 +6546,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The badger makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 4 (1d6 + 1) piercing damage.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -6568,7 +6568,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Bat",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -6581,13 +6581,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 18 m., passive Perception 11",
+        senses: "vision aveugle 18 m., perception passive 11",
         languages: "",
         cr: "1/4",
         traits: [
             {
                 name: "Echolocation",
-                desc: "The bat can't use its blindsight while deafened.",
+                desc: "The bat can't use its vision aveugle while deafened.",
                 attack_bonus: 0
             },
             {
@@ -6598,7 +6598,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 5 (1d6 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
@@ -6608,7 +6608,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Boar",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -6621,7 +6621,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 8",
+        senses: "perception passive 8",
         languages: "",
         cr: "2",
         traits: [
@@ -6662,12 +6662,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 9 m., passive Perception 8",
+        senses: "vision aveugle 9 m., perception passive 8",
         languages: "",
         cr: "1/4",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Bite. Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
@@ -6677,26 +6677,26 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Constrictor Snake",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 60,
         hit_dice: "8d12 + 8",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [19, 14, 12, 1, 10, 3],
         skillsaves: [{ perception: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., passive Perception 12",
+        senses: "vision aveugle 3 m., perception passive 12",
         languages: "",
         cr: "2",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 3 m., one creature. Hit: 11 (2d6 + 4) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "2d6",
@@ -6713,33 +6713,33 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Crab",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 15,
         hp: 13,
         hit_dice: "3d8 + -1",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [13, 15, 11, 1, 9, 3],
         skillsaves: [{ stealth: 4 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 9 m., passive Perception 9",
+        senses: "vision aveugle 9 m., perception passive 9",
         languages: "",
         cr: "1/8",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The crab can breathe air and water.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -6749,21 +6749,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Crocodile",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 14,
         hp: 85,
         hit_dice: "9d12 + 26",
-        speed: "9 m., swim 15 m.",
+        speed: "9 m., nage 15 m.",
         stats: [21, 9, 17, 2, 10, 7],
         skillsaves: [{ stealth: 5 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "5",
         traits: [
@@ -6775,19 +6775,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The crocodile makes two attacks: one with its bite and one with its tail.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +8 to hit, reach 1.5 m., one target. Hit: 21 (3d10 + 5) piercing damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.",
                 attack_bonus: 8,
                 damage_dice: "3d10",
                 damage_bonus: 5
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +8 to hit, reach 3 m., one target not grappled by the crocodile. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.",
                 attack_bonus: 8,
                 damage_dice: "2d8",
@@ -6797,7 +6797,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Eagle",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "neutral good",
@@ -6811,7 +6811,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "Giant Eagle, understands Common and Auran but can't speak",
         cr: "1",
         traits: [
@@ -6823,7 +6823,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The eagle makes two attacks: one with its beak and one with its talons.",
                 attack_bonus: 0
             },
@@ -6845,7 +6845,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Elk",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -6859,7 +6859,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages:
             "Giant Elk, understands Common, Elvish, and Sylvan but can't speak",
         cr: "2",
@@ -6903,7 +6903,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 9 m., passive Perception 8",
+        senses: "vision aveugle 9 m., perception passive 8",
         languages: "",
         cr: "0",
         traits: [
@@ -6915,7 +6915,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +1 to hit, reach 1.5 m., one target. Hit: 2 (1d6 — 1) slashing damage.",
                 attack_bonus: 1,
                 damage_dice: "1d6",
@@ -6925,26 +6925,26 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Frog",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 11,
         hp: 18,
         hit_dice: "4d8",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [12, 13, 11, 2, 10, 3],
         skillsaves: [{ perception: 2 }, { stealth: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 12",
+        senses: "vision dans le noir 9 m., perception passive 12",
         languages: "",
         cr: "1/4",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The frog can breathe air and water",
                 attack_bonus: 0
             },
@@ -6956,7 +6956,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -6971,7 +6971,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Goat",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -6984,7 +6984,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "",
         cr: "1/2",
         traits: [
@@ -7012,7 +7012,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Hyena",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7026,7 +7026,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1",
         traits: [
@@ -7038,7 +7038,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d6",
@@ -7048,7 +7048,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Lizard",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7061,7 +7061,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 10",
+        senses: "vision dans le noir 9 m., perception passive 10",
         languages: "",
         cr: "1/4",
         traits: [
@@ -7078,7 +7078,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 6 (1d8 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d8",
@@ -7088,21 +7088,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Octopus",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 11,
         hp: 52,
         hit_dice: "8d10 + 8",
-        speed: "3 m., swim 18 m.",
+        speed: "3 m., nage 18 m.",
         stats: [17, 13, 13, 4, 10, 4],
         skillsaves: [{ perception: 4 }, { stealth: 5 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "",
         cr: "1",
         traits: [
@@ -7139,7 +7139,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Owl",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "neutral",
@@ -7153,7 +7153,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 15",
+        senses: "vision dans le noir 36 m., perception passive 15",
         languages:
             "Giant Owl, understands Common, Elvish, and Sylvan but can't speak",
         cr: "1/4",
@@ -7181,26 +7181,26 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Poisonous Snake",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 14,
         hp: 11,
         hit_dice: "2d8 + 2",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [10, 18, 13, 2, 10, 3],
         skillsaves: [{ perception: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., passive Perception 12",
+        senses: "vision aveugle 3 m., perception passive 12",
         languages: "",
         cr: "1/4",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 3 m., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 6,
                 damage_dice: "1d4",
@@ -7223,7 +7223,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "",
         cr: "1/8",
         traits: [
@@ -7240,7 +7240,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 4 (1d4 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
@@ -7263,12 +7263,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "",
         cr: "1/8",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 3 (1d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 (1d6) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
@@ -7278,7 +7278,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Scorpion",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7291,19 +7291,19 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 18 m., passive Perception 9",
+        senses: "vision aveugle 18 m., perception passive 9",
         languages: "",
         cr: "3",
         actions: [
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.",
                 attack_bonus: 4,
                 damage_dice: "1d8",
                 damage_bonus: 2
             },
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The scorpion makes three attacks: two with its claws and one with its sting.",
                 attack_bonus: 0
             },
@@ -7318,20 +7318,20 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Sea Horse",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 13,
         hp: 16,
         hit_dice: "3d10 + -1",
-        speed: "0 m., swim 12 m.",
+        speed: "0 m., nage 12 m.",
         stats: [12, 15, 11, 2, 12, 5],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "",
         cr: "1/2",
         traits: [
@@ -7359,21 +7359,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Shark",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 13,
         hp: 126,
         hit_dice: "11d12 + 54",
-        speed: "swim 15 m.",
+        speed: "nage 15 m.",
         stats: [23, 11, 21, 1, 10, 5],
         skillsaves: [{ perception: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 18 m., passive Perception 13",
+        senses: "vision aveugle 18 m., perception passive 13",
         languages: "",
         cr: "5",
         traits: [
@@ -7390,7 +7390,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Weapon Attack: +9 to hit, reach 1.5 m., one target. Hit: 22 (3d10 + 6) piercing damage.",
                 attack_bonus: 9,
                 damage_dice: "3d10",
@@ -7400,7 +7400,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Spider",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7414,7 +7414,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 10",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 10",
         languages: "",
         cr: "1",
         traits: [
@@ -7436,7 +7436,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack_bonus: 5,
                 damage_dice: "1d8",
@@ -7451,25 +7451,25 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Toad",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 11,
         hp: 39,
         hit_dice: "6d10 + 6",
-        speed: "6 m., swim 12 m.",
+        speed: "6 m., nage 12 m.",
         stats: [15, 13, 13, 2, 10, 3],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 10",
+        senses: "vision dans le noir 9 m., perception passive 10",
         languages: "",
         cr: "1",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The toad can breathe air and water",
                 attack_bonus: 0
             },
@@ -7481,7 +7481,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can't bite another target.",
                 attack_bonus: 4,
                 damage_dice: "1d10",
@@ -7496,7 +7496,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Vulture",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "neutral evil",
@@ -7510,7 +7510,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "understands Common but can't speak",
         cr: "1",
         traits: [
@@ -7527,7 +7527,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The vulture makes two attacks: one with its beak and one with its talons.",
                 attack_bonus: 0
             },
@@ -7549,20 +7549,20 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Wasp",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 13,
         hit_dice: "3d8 + -1",
-        speed: "3 m., fly 15 m., swim 15 m.",
+        speed: "3 m., fly 15 m., nage 15 m.",
         stats: [10, 14, 10, 1, 10, 3],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/2",
         actions: [
@@ -7577,7 +7577,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Weasel",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7591,7 +7591,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "1/8",
         traits: [
@@ -7603,7 +7603,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 5 (1d4 + 3) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d4",
@@ -7613,7 +7613,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Giant Wolf Spider",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7627,7 +7627,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 13",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "1/4",
         traits: [
@@ -7649,7 +7649,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Weapon Attack: +3 to hit, reach 1.5 m., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -7659,20 +7659,20 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gibbering Mouther",
-        size: "Medium",
+        size: "M",
         type: "aberration",
         subtype: "",
         alignment: "neutral",
         ac: 9,
         hp: 67,
         hit_dice: "9d8 + 26",
-        speed: "3 m., swim 3 m.",
+        speed: "3 m., nage 3 m.",
         stats: [10, 8, 16, 3, 10, 6],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "prone",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "",
         cr: "2",
         traits: [
@@ -7689,7 +7689,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.",
                 attack_bonus: 0
             },
@@ -7708,10 +7708,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Glabrezu",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 17,
         hp: 157,
         hit_dice: "15d10 + 74",
@@ -7728,8 +7728,8 @@ export const BESTIARY: Monster[] = [
             "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "truesight 36 m., passive Perception 13",
-        languages: "Abyssal, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 13",
+        languages: "Abyssal, télépathie 36 m.",
         cr: "9",
         traits: [
             {
@@ -7745,7 +7745,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell.",
                 attack_bonus: 0
             },
@@ -7772,10 +7772,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gladiator",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 16,
         hp: 112,
         hit_dice: "15d8 + 44",
@@ -7787,8 +7787,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 11",
+        languages: "une langue au choix (généralement le commun)",
         cr: "5",
         traits: [
             {
@@ -7804,7 +7804,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The gladiator makes three melee attacks or two ranged attacks.",
                 attack_bonus: 0
             },
@@ -7833,10 +7833,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gnoll",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "gnoll",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 15,
         hp: 22,
         hit_dice: "5d8 + -1",
@@ -7846,7 +7846,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Gnoll",
         cr: "1/2",
         traits: [
@@ -7858,7 +7858,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 4 (1d4 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
@@ -7882,7 +7882,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Goat",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -7895,7 +7895,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "0",
         traits: [
@@ -7924,7 +7924,7 @@ export const BESTIARY: Monster[] = [
     {
         name: "Goblin",
         size: "Small",
-        type: "humanoid",
+        type: "humanoïde",
         subtype: "goblinoid",
         alignment: "neutral evil",
         ac: 15,
@@ -7937,7 +7937,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "Common, Goblin",
         cr: "1/4",
         traits: [
@@ -7966,14 +7966,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gold Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
         ac: 17,
         hp: 60,
         hit_dice: "8d8 + 24",
-        speed: "9 m., fly 18 m., swim 9 m.",
+        speed: "9 m., fly 18 m., nage 9 m.",
         stats: [19, 14, 17, 14, 11, 16],
         saves: [
             { dexterity: 4 },
@@ -7986,19 +7986,19 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "3",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 9 (1d10 + 4) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d10",
@@ -8014,7 +8014,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gorgon",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -8028,7 +8028,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "petrified",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "",
         cr: "5",
         traits: [
@@ -8062,7 +8062,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gray Ooze",
-        size: "Medium",
+        size: "M",
         type: "ooze",
         subtype: "",
         alignment: "unaligned",
@@ -8077,7 +8077,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "blinded, charmed, deafened, exhaustion, frightened, prone",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 8",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 8",
         languages: "",
         cr: "1/2",
         traits: [
@@ -8109,14 +8109,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Green Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 17,
         hp: 38,
         hit_dice: "7d8 + 6",
-        speed: "9 m., fly 18 m., swim 9 m.",
+        speed: "9 m., fly 18 m., nage 9 m.",
         stats: [15, 12, 13, 14, 11, 13],
         saves: [
             { dexterity: 3 },
@@ -8129,19 +8129,19 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "2",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (1d10 + 2) piercing damage plus 3 (1d6) poison damage.",
                 attack_bonus: 4,
                 damage_dice: "1d10 + 1d6",
@@ -8157,7 +8157,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Green Hag",
-        size: "Medium",
+        size: "M",
         type: "fey",
         subtype: "",
         alignment: "neutral evil",
@@ -8176,12 +8176,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Common, Draconic, Sylvan",
         cr: "3",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The hag can breathe air and water.",
                 attack_bonus: 0
             },
@@ -8192,7 +8192,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Mimicry",
-                desc: "The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check.",
+                desc: "The hag can mimic animal sounds and humanoïde voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check.",
                 attack_bonus: 0
             },
             {
@@ -8207,7 +8207,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Hag Eye (Coven Only)",
-                desc: "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 18 meters. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.",
+                desc: "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and vision dans le noir with a radius of 18 meters. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.",
                 attack_bonus: 0
             }
         ],
@@ -8221,7 +8221,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Illusory Appearance",
-                desc: "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.",
+                desc: "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoïde shape. The illusion ends if the hag takes a bonus action to end it or if she dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.",
                 attack_bonus: 0
             },
             {
@@ -8233,7 +8233,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Grick",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral",
@@ -8247,7 +8247,7 @@ export const BESTIARY: Monster[] = [
             "bludgeoning, piercing, and slashing damage from nonmagical weapons",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "",
         cr: "2",
         traits: [
@@ -8259,7 +8259,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
                 attack_bonus: 0
             },
@@ -8281,7 +8281,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Griffon",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -8295,7 +8295,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 15",
+        senses: "vision dans le noir 18 m., perception passive 15",
         languages: "",
         cr: "2",
         traits: [
@@ -8307,7 +8307,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The griffon makes two attacks: one with its beak and one with its claws.",
                 attack_bonus: 0
             },
@@ -8329,8 +8329,8 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Grimlock",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "grimlock",
         alignment: "neutral evil",
         ac: 11,
@@ -8343,13 +8343,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "blinded",
         condition_immunities: "",
-        senses: "blindsight 9 m. or 3 m. while deafened (blind beyond this radius), passive Perception 13",
+        senses: "vision aveugle 9 m. or 3 m. while deafened (blind beyond this radius), perception passive 13",
         languages: "Undercommon",
         cr: "1/4",
         traits: [
             {
                 name: "Blind Senses",
-                desc: "The grimlock can't use its blindsight while deafened and unable to smell.",
+                desc: "The grimlock can't use its vision aveugle while deafened and unable to smell.",
                 attack_bonus: 0
             },
             {
@@ -8375,10 +8375,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Guard",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 16,
         hp: 11,
         hit_dice: "2d8 + 2",
@@ -8389,8 +8389,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 12",
+        languages: "une langue au choix (généralement le commun)",
         cr: "1/8",
         actions: [
             {
@@ -8404,7 +8404,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Guardian Naga",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "lawful good",
@@ -8424,7 +8424,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "charmed, poisoned",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Celestial, Common",
         cr: "10",
         traits: [
@@ -8436,7 +8436,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +8 to hit, reach 3 m., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 8,
                 damage_dice: "1d8",
@@ -8462,7 +8462,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Gynosphinx",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "lawful neutral",
@@ -8482,7 +8482,7 @@ export const BESTIARY: Monster[] = [
             "bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "psychic",
         condition_immunities: "charmed, frightened",
-        senses: "truesight 36 m., passive Perception 18",
+        senses: "truesight 36 m., perception passive 18",
         languages: "Common, Sphinx",
         cr: "11",
         traits: [
@@ -8499,12 +8499,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The sphinx makes two claw attacks.",
                 attack_bonus: 0
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +9 to hit, reach 1.5 m., one target. Hit: 13 (2d8 + 4) slashing damage.",
                 attack_bonus: 9,
                 damage_dice: "2d8",
@@ -8543,10 +8543,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Half-Red Dragon Veteran",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "human",
-        alignment: "any alignment",
+        alignment: "tout alignement",
         ac: 18,
         hp: 65,
         hit_dice: "10d8 + 20",
@@ -8556,12 +8556,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "fire",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 12",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 12",
+        languages: "Commun, Draconique",
         cr: "5",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
                 attack_bonus: 0
             },
@@ -8596,10 +8596,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Harpy",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 11,
         hp: 38,
         hit_dice: "7d8 + 6",
@@ -8609,12 +8609,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "Common",
         cr: "1",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The harpy makes two attacks: one with its claws and one with its club.",
                 attack_bonus: 0
             },
@@ -8626,7 +8626,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 1
             },
             {
-                name: "Club",
+                name: "Gourdin",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
                 attack_bonus: 3,
                 damage_dice: "1d4",
@@ -8634,7 +8634,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Luring Song",
-                desc: "The harpy sings a magical melody. Every humanoid and giant within 90 m. of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.\nWhile charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 1.5 m. away from the harpy, the must move on its turn toward the harpy by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.\nA target that successfully saves is immune to this harpy's song for the next 24 hours.",
+                desc: "The harpy sings a magical melody. Every humanoïde and giant within 90 m. of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.\nWhile charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 1.5 m. away from the harpy, the must move on its turn toward the harpy by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.\nA target that successfully saves is immune to this harpy's song for the next 24 hours.",
                 attack_bonus: 0
             }
         ]
@@ -8655,7 +8655,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "0",
         traits: [
@@ -8676,10 +8676,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hell Hound",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 15,
         hp: 45,
         hit_dice: "7d8 + 13",
@@ -8690,7 +8690,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 15",
+        senses: "vision dans le noir 18 m., perception passive 15",
         languages: "understands Infernal but can't speak it",
         cr: "3",
         traits: [
@@ -8707,7 +8707,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.",
                 attack_bonus: 5,
                 damage_dice: "1d8",
@@ -8723,10 +8723,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hezrou",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 16,
         hp: 136,
         hit_dice: "13d10 + 64",
@@ -8738,8 +8738,8 @@ export const BESTIARY: Monster[] = [
             "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 11",
-        languages: "Abyssal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 11",
+        languages: "Abyssal, télépathie 36 m.",
         cr: "8",
         traits: [
             {
@@ -8755,12 +8755,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The hezrou makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 15 (2d10 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d10",
@@ -8782,10 +8782,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hill Giant",
-        size: "Huge",
+        size: "TG",
         type: "giant",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 13,
         hp: 105,
         hit_dice: "10d12 + 40",
@@ -8796,12 +8796,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "Giant",
         cr: "5",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The giant makes two greatclub attacks.",
                 attack_bonus: 0
             },
@@ -8823,7 +8823,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hippogriff",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -8837,7 +8837,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 15",
+        senses: "perception passive 15",
         languages: "",
         cr: "1",
         traits: [
@@ -8849,7 +8849,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The hippogriff makes two attacks: one with its beak and one with its claws.",
                 attack_bonus: 0
             },
@@ -8871,10 +8871,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hobgoblin",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "goblinoid",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 11,
         hit_dice: "2d8 + 2",
@@ -8884,7 +8884,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Common, Goblin",
         cr: "1/2",
         traits: [
@@ -8927,7 +8927,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "charmed, poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "understands the languages of its creator but can't speak",
         cr: "0",
         traits: [
@@ -8939,7 +8939,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.",
                 attack_bonus: 4,
                 damage_bonus: 1
@@ -8948,10 +8948,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Horned Devil",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 148,
         hit_dice: "17d10 + 54",
@@ -8968,13 +8968,13 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 13",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 13",
+        languages: "Infernal, télépathie 36 m.",
         cr: "11",
         traits: [
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the devil's darkvision.",
+                desc: "Magical darkness doesn't impede the devil's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -8985,7 +8985,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.",
                 attack_bonus: 0
             },
@@ -8997,7 +8997,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 6
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 10 (1d8 + 6) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 17 Constitution saving throw or lose 10 (3d6) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 (3d6). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.",
                 attack_bonus: 10,
                 damage_dice: "1d8",
@@ -9013,21 +9013,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hunter Shark",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 45,
         hit_dice: "6d10 + 12",
-        speed: "swim 12 m.",
+        speed: "nage 12 m.",
         stats: [18, 13, 15, 1, 10, 4],
         skillsaves: [{ perception: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 12",
+        senses: "vision dans le noir 9 m., perception passive 12",
         languages: "",
         cr: "2",
         traits: [
@@ -9044,7 +9044,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 13 (2d8 + 4) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "2d8",
@@ -9054,21 +9054,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hydra",
-        size: "Huge",
+        size: "TG",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
         ac: 15,
         hp: 172,
         hit_dice: "15d12 + 74",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [20, 12, 20, 2, 10, 7],
         skillsaves: [{ perception: 6 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 16",
+        senses: "vision dans le noir 18 m., perception passive 16",
         languages: "",
         cr: "8",
         traits: [
@@ -9095,12 +9095,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The hydra makes as many bite attacks as it has heads.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +8 to hit, reach 3 m., one target. Hit: 10 (1d10 + 5) piercing damage.",
                 attack_bonus: 8,
                 damage_dice: "1d10",
@@ -9110,7 +9110,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Hyena",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -9124,7 +9124,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -9136,7 +9136,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Weapon Attack: +2 to hit, reach 1.5 m., one target. Hit: 3 (1d6) piercing damage.",
                 attack_bonus: 2,
                 damage_dice: "1d6"
@@ -9145,10 +9145,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ice Devil",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 180,
         hit_dice: "19d10 + 75",
@@ -9165,13 +9165,13 @@ export const BESTIARY: Monster[] = [
             "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "blindsight 18 m., darkvision 36 m., passive Perception 12",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "vision aveugle 18 m., vision dans le noir 36 m., perception passive 12",
+        languages: "Infernal, télépathie 36 m.",
         cr: "14",
         traits: [
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the devil's darkvision.",
+                desc: "Magical darkness doesn't impede the devil's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -9182,12 +9182,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The devil makes three attacks: one with its bite, one with its claws, and one with its tail.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 1.5 m., one target. Hit: 12 (2d6 + 5) piercing damage plus 10 (3d6) cold damage.",
                 attack_bonus: 10,
                 damage_dice: "2d6 + 3d6",
@@ -9201,7 +9201,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 5
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack:+10 to hit, reach 3 m., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 10 (3d6) cold damage.",
                 attack_bonus: 10,
                 damage_dice: "2d6 + 3d6",
@@ -9230,7 +9230,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "Aquan, Auran",
         cr: "1/2",
         traits: [
@@ -9276,7 +9276,7 @@ export const BESTIARY: Monster[] = [
         size: "Tiny",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 13,
         hp: 10,
         hit_dice: "3d4 + 2",
@@ -9293,7 +9293,7 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical/nonsilver weapons",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 11",
+        senses: "vision dans le noir 36 m., perception passive 11",
         languages: "Infernal, Common",
         cr: "1",
         traits: [
@@ -9304,7 +9304,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the imp's darkvision.",
+                desc: "Magical darkness doesn't impede the imp's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -9335,7 +9335,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Invisible Stalker",
-        size: "Medium",
+        size: "M",
         type: "elemental",
         subtype: "",
         alignment: "neutral",
@@ -9351,7 +9351,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison",
         condition_immunities:
             "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-        senses: "darkvision 18 m., passive Perception 18",
+        senses: "vision dans le noir 18 m., perception passive 18",
         languages: "Auran, understands Common but doesn't speak it",
         cr: "6",
         traits: [
@@ -9368,7 +9368,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The stalker makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -9383,7 +9383,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Iron Golem",
-        size: "Large",
+        size: "G",
         type: "construct",
         subtype: "",
         alignment: "unaligned",
@@ -9398,7 +9398,7 @@ export const BESTIARY: Monster[] = [
             "fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-        senses: "darkvision 36 m., passive Perception 10",
+        senses: "vision dans le noir 36 m., perception passive 10",
         languages: "understands the languages of its creator but can't speak",
         cr: "16",
         traits: [
@@ -9425,7 +9425,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The golem makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -9467,7 +9467,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -9484,7 +9484,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +1 to hit, reach 1.5 m., one target. Hit: 1 (1d4 — 1) piercing damage.",
                 attack_bonus: 1,
                 damage_dice: "1d4",
@@ -9494,27 +9494,27 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Killer Whale",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 90,
         hit_dice: "12d12 + 12",
-        speed: "swim 18 m.",
+        speed: "nage 18 m.",
         stats: [19, 10, 13, 3, 12, 7],
         skillsaves: [{ perception: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 36 m., passive Perception 13",
+        senses: "vision aveugle 36 m., perception passive 13",
         languages: "",
         cr: "3",
         traits: [
             {
                 name: "Echolocation",
-                desc: "The whale can't use its blindsight while deafened.",
+                desc: "The whale can't use its vision aveugle while deafened.",
                 attack_bonus: 0
             },
             {
@@ -9530,7 +9530,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 21 (5d6 + 4) piercing damage.",
                 attack_bonus: 0
             }
@@ -9538,10 +9538,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Knight",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 18,
         hp: 52,
         hit_dice: "8d8 + 16",
@@ -9552,8 +9552,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 10",
+        languages: "une langue au choix (généralement le commun)",
         cr: "3",
         traits: [
             {
@@ -9564,7 +9564,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The knight makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -9598,9 +9598,9 @@ export const BESTIARY: Monster[] = [
     {
         name: "Kobold",
         size: "Small",
-        type: "humanoid",
+        type: "humanoïde",
         subtype: "kobold",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 12,
         hp: 5,
         hit_dice: "2d6 + -2",
@@ -9610,8 +9610,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 8",
-        languages: "Common, Draconic",
+        senses: "vision dans le noir 18 m., perception passive 8",
+        languages: "Commun, Draconique",
         cr: "1/8",
         traits: [
             {
@@ -9647,11 +9647,11 @@ export const BESTIARY: Monster[] = [
         size: "Gargantuan",
         type: "monstrosity",
         subtype: "titan",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 18,
         hp: 472,
         hit_dice: "27d20 + 188",
-        speed: "6 m., swim 18 m.",
+        speed: "6 m., nage 18 m.",
         stats: [30, 11, 25, 22, 18, 20],
         saves: [
             { strength: 17 },
@@ -9665,13 +9665,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities: "frightened, paralyzed",
-        senses: "truesight 36 m., passive Perception 14",
+        senses: "truesight 36 m., perception passive 14",
         languages:
-            "understands Abyssal, Celestial, Infernal, and Primordial but can't speak, telepathy 36 m.",
+            "understands Abyssal, Celestial, Infernal, and Primordial but can't speak, télépathie 36 m.",
         cr: "23",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The kraken can breathe air and water.",
                 attack_bonus: 0
             },
@@ -9688,19 +9688,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 23 (3d8 + 10) piercing damage. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken's turns. If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 3 meters of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 4.5 meters of movement, exiting prone.",
                 attack_bonus: 7,
                 damage_dice: "3d8",
                 damage_bonus: 10
             },
             {
-                name: "Tentacle",
+                name: "Tentacule",
                 desc: "Melee Weapon Attack: +7 to hit, reach 9 m., one target. Hit: 20 (3d6 + 10) bludgeoning damage, and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained. The kraken has ten tentacles, each of which can grapple one target.",
                 attack_bonus: 7,
                 damage_dice: "3d6",
@@ -9738,10 +9738,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Lamia",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 13,
         hp: 97,
         hit_dice: "13d10 + 25",
@@ -9752,19 +9752,19 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "Abyssal, Common",
         cr: "4",
         traits: [
             {
                 name: "Innate Spellcasting",
-                desc: "The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components. At will: disguise self (any humanoid form), major image 3/day each: charm person, mirror image, scrying, suggestion 1/day: geas",
+                desc: "The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components. At will: disguise self (any humanoïde form), major image 3/day each: charm person, mirror image, scrying, suggestion 1/day: geas",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.",
                 attack_bonus: 0
             },
@@ -9791,10 +9791,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Lemure",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 7,
         hp: 13,
         hit_dice: "3d8 + -1",
@@ -9804,13 +9804,13 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "cold",
         damage_immunities: "fire, poison",
         condition_immunities: "charmed, frightened, poisoned",
-        senses: "darkvision 36 m., passive Perception 10",
+        senses: "vision dans le noir 36 m., perception passive 10",
         languages: "understands infernal but can't speak",
         cr: "0",
         traits: [
             {
                 name: "Devil's Sight",
-                desc: "Magical darkness doesn't impede the lemure's darkvision.",
+                desc: "Magical darkness doesn't impede the lemure's vision dans le noir.",
                 attack_bonus: 0
             },
             {
@@ -9830,7 +9830,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Lich",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
         alignment: "any evil alignment",
@@ -9852,12 +9852,12 @@ export const BESTIARY: Monster[] = [
             "poison; bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, poisoned",
-        senses: "truesight 36 m., passive Perception 19",
+        senses: "truesight 36 m., perception passive 19",
         languages: "Common plus up to five other languages",
         cr: "21",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
+                name: "Résistance légendaire (3/jour)",
                 desc: "If the lich fails a saving throw, it can choose to succeed instead.",
                 attack_bonus: 0
             },
@@ -9931,7 +9931,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Lion",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -9945,7 +9945,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1",
         traits: [
@@ -9972,14 +9972,14 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 7 (1d8 + 3) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d8",
                 damage_bonus: 3
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 6 (1d6 + 3) slashing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d6",
@@ -10002,12 +10002,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 9",
+        senses: "vision dans le noir 9 m., perception passive 9",
         languages: "",
         cr: "0",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +0 to hit, reach 1.5 m., one target. Hit: 1 piercing damage.",
                 attack_bonus: 0,
                 damage_bonus: 1
@@ -10016,21 +10016,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Lizardfolk",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "lizardfolk",
         alignment: "neutral",
         ac: 15,
         hp: 22,
         hit_dice: "4d8 + 4",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [15, 10, 13, 7, 12, 7],
         skillsaves: [{ perception: 3 }, { stealth: 4 }, { survival: 5 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "Draconic",
         cr: "1/2",
         traits: [
@@ -10042,12 +10042,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The lizardfolk makes two melee attacks, each one with a different weapon.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 5 (1d6 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
@@ -10078,10 +10078,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mage",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 12,
         hp: 40,
         hit_dice: "9d8 + -1",
@@ -10093,7 +10093,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "any four languages",
         cr: "6",
         traits: [],
@@ -10138,7 +10138,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Ignan, Terran",
         cr: "1/2",
         traits: [
@@ -10195,7 +10195,7 @@ export const BESTIARY: Monster[] = [
             "bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Ignan",
         cr: "1/2",
         traits: [
@@ -10222,7 +10222,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mammoth",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -10235,7 +10235,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "6",
         traits: [
@@ -10264,10 +10264,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Manticore",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 14,
         hp: 68,
         hit_dice: "8d10 + 24",
@@ -10277,7 +10277,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "",
         cr: "3",
         traits: [
@@ -10289,19 +10289,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 7 (1d8 + 3) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d8",
                 damage_bonus: 3
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 6 (1d6 + 3) slashing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d6",
@@ -10318,10 +10318,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Marilith",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 18,
         hp: 189,
         hit_dice: "18d10 + 90",
@@ -10338,8 +10338,8 @@ export const BESTIARY: Monster[] = [
             "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "truesight 36 m., passive Perception 13",
-        languages: "Abyssal, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 13",
+        languages: "Abyssal, télépathie 36 m.",
         cr: "16",
         traits: [
             {
@@ -10360,7 +10360,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The marilith can make seven attacks: six with its longswords and one with its tail.",
                 attack_bonus: 0
             },
@@ -10372,7 +10372,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 4
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +9 to hit, reach 3 m., one creature. Hit: 15 (2d10 + 4) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape DC 19). Until this grapple ends, the target is restrained, the marilith can automatically hit the target with its tail, and the marilith can't make tail attacks against other targets.",
                 attack_bonus: 9,
                 damage_dice: "2d10",
@@ -10399,7 +10399,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mastiff",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -10413,7 +10413,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1/8",
         traits: [
@@ -10425,7 +10425,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
                 attack_bonus: 3,
                 damage_dice: "1d6",
@@ -10435,10 +10435,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Medusa",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 15,
         hp: 127,
         hit_dice: "17d8 + 50",
@@ -10454,7 +10454,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Common",
         cr: "6",
         traits: [
@@ -10466,7 +10466,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The medusa makes either three melee attacks —  one with its snake hair and two with its shortsword — or two ranged attacks with its longbow.",
                 attack_bonus: 0
             },
@@ -10494,26 +10494,26 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Merfolk",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "merfolk",
         alignment: "neutral",
         ac: 11,
         hp: 11,
         hit_dice: "2d8 + 2",
-        speed: "3 m., swim 12 m.",
+        speed: "3 m., nage 12 m.",
         stats: [10, 13, 12, 11, 11, 12],
         skillsaves: [{ perception: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "Aquan, Common",
         cr: "1/8",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The merfolk can breathe air and water.",
                 attack_bonus: 0
             }
@@ -10529,37 +10529,37 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Merrow",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 13,
         hp: 45,
         hit_dice: "6d10 + 12",
-        speed: "3 m., swim 12 m.",
+        speed: "3 m., nage 12 m.",
         stats: [18, 10, 15, 8, 10, 9],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Abyssal, Aquan",
         cr: "2",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The merrow can breathe air and water.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The merrow makes two attacks: one with its bite and one with its claws or harpoon.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 8 (1d8 + 4) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d8",
@@ -10583,7 +10583,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mimic",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "shapechanger",
         alignment: "neutral",
@@ -10595,9 +10595,9 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ stealth: 5 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "prone",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "",
         cr: "2",
         traits: [
@@ -10631,7 +10631,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 3
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.",
                 attack_bonus: 5,
                 damage_dice: "1d8 + 1d8",
@@ -10641,10 +10641,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Minotaur",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 14,
         hp: 76,
         hit_dice: "9d10 + 26",
@@ -10655,7 +10655,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 17",
+        senses: "vision dans le noir 18 m., perception passive 17",
         languages: "Abyssal",
         cr: "3",
         traits: [
@@ -10695,10 +10695,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Minotaur Skeleton",
-        size: "Large",
+        size: "G",
         type: "undead",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 12,
         hp: 67,
         hit_dice: "9d10 + 17",
@@ -10708,7 +10708,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "exhaustion, poisoned",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "understands Abyssal but can't speak",
         cr: "2",
         traits: [
@@ -10738,7 +10738,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mule",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -10751,7 +10751,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/8",
         traits: [
@@ -10778,10 +10778,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mummy",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 11,
         hp: 58,
         hit_dice: "9d8 + 17",
@@ -10793,12 +10793,12 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities: "necrotic, poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "the languages it knew in life",
         cr: "3",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
                 attack_bonus: 0
             },
@@ -10818,10 +10818,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Mummy Lord",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 17,
         hp: 97,
         hit_dice: "13d8 + 38",
@@ -10840,7 +10840,7 @@ export const BESTIARY: Monster[] = [
             "necrotic, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, poisoned",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "the languages it knew in life",
         cr: "15",
         traits: [
@@ -10857,7 +10857,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
                 attack_bonus: 0
             },
@@ -10914,10 +10914,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Nalfeshnee",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 18,
         hp: 184,
         hit_dice: "16d10 + 96",
@@ -10934,8 +10934,8 @@ export const BESTIARY: Monster[] = [
             "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "truesight 36 m., passive Perception 11",
-        languages: "Abyssal, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 11",
+        languages: "Abyssal, télépathie 36 m.",
         cr: "13",
         traits: [
             {
@@ -10946,19 +10946,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The nalfeshnee uses Horror Nimbus if it can.  It then makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 1.5 m., one target. Hit: 32 (5d10 + 5) piercing damage.",
                 attack_bonus: 10,
                 damage_dice: "5d10",
                 damage_bonus: 5
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 15 (3d6 + 5) slashing damage.",
                 attack_bonus: 10,
                 damage_dice: "3d6",
@@ -10983,7 +10983,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Night Hag",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "",
         alignment: "neutral evil",
@@ -11003,7 +11003,7 @@ export const BESTIARY: Monster[] = [
             "cold, fire; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "",
         condition_immunities: "charmed",
-        senses: "darkvision 36 m., passive Perception 16",
+        senses: "vision dans le noir 36 m., perception passive 16",
         languages: "Abyssal, Common, Infernal, Primordial",
         cr: "5",
         traits: [
@@ -11019,7 +11019,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Night Hag Items",
-                desc: "A night hag carries two very rare magic items that she must craft for herself If either object is lost, the night hag will go to great lengths to retrieve it, as creating a new tool takes time and effort.\nHeartstone: This lustrous black gem allows a night hag to become ethereal while it is in her possession. The touch of a heartstone also cures any disease. Crafting a heartstone takes 30 days.\nSoul Bag: When an evil humanoid dies as a result of a night hag's Nightmare Haunting, the hag catches the soul in this black sack made of stitched flesh. A soul bag can hold only one evil soul at a time, and only the night hag who crafted the bag can catch a soul with it. Crafting a soul bag takes 7 days and a humanoid sacrifice (whose flesh is used to make the bag).",
+                desc: "A night hag carries two very rare magic items that she must craft for herself If either object is lost, the night hag will go to great lengths to retrieve it, as creating a new tool takes time and effort.\nHeartstone: This lustrous black gem allows a night hag to become ethereal while it is in her possession. The touch of a heartstone also cures any disease. Crafting a heartstone takes 30 days.\nSoul Bag: When an evil humanoïde dies as a result of a night hag's Nightmare Haunting, the hag catches the soul in this black sack made of stitched flesh. A soul bag can hold only one evil soul at a time, and only the night hag who crafted the bag can catch a soul with it. Crafting a soul bag takes 7 days and a humanoïde sacrifice (whose flesh is used to make the bag).",
                 attack_bonus: 0
             },
             {
@@ -11034,7 +11034,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Hag Eye (Coven Only)",
-                desc: "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 18 meters. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.",
+                desc: "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and vision dans le noir with a radius of 18 meters. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.",
                 attack_bonus: 0
             }
         ],
@@ -11048,7 +11048,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The hag magically polymorphs into a Small or Medium female humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies.",
+                desc: "The hag magically polymorphs into a Small or Medium female humanoïde, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies.",
                 attack_bonus: 0
             },
             {
@@ -11058,14 +11058,14 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Nightmare Haunting (1/Day)",
-                desc: "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.",
+                desc: "While on the Ethereal Plane, the hag magically touches a sleeping humanoïde on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Nightmare",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "",
         alignment: "neutral evil",
@@ -11078,7 +11078,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "understands Abyssal, Common, and Infernal but can't speak",
         cr: "3",
         traits: [
@@ -11110,10 +11110,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Noble",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 15,
         hp: 9,
         hit_dice: "2d8",
@@ -11124,7 +11124,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "any two languages",
         cr: "1/8",
         actions: [
@@ -11146,7 +11146,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ochre Jelly",
-        size: "Large",
+        size: "G",
         type: "ooze",
         subtype: "",
         alignment: "unaligned",
@@ -11156,11 +11156,11 @@ export const BESTIARY: Monster[] = [
         speed: "3 m., climb 3 m.",
         stats: [15, 6, 14, 2, 6, 1],
         damage_vulnerabilities: "",
-        damage_resistances: "acid",
+        damage_resistances: "acide",
         damage_immunities: "lightning, slashing",
         condition_immunities:
             "blinded, charmed, deafened, exhaustion, frightened, prone",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 8",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 8",
         languages: "",
         cr: "2",
         traits: [
@@ -11201,14 +11201,14 @@ export const BESTIARY: Monster[] = [
         ac: 12,
         hp: 3,
         hit_dice: "1d6 + -1",
-        speed: "1.5 m., swim 9 m.",
+        speed: "1.5 m., nage 9 m.",
         stats: [4, 15, 11, 3, 10, 4],
         skillsaves: [{ perception: 2 }, { stealth: 4 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 12",
+        senses: "vision dans le noir 9 m., perception passive 12",
         languages: "",
         cr: "0",
         traits: [
@@ -11244,10 +11244,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ogre",
-        size: "Large",
+        size: "G",
         type: "giant",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 11,
         hp: 59,
         hit_dice: "7d10 + 20",
@@ -11257,7 +11257,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 8",
+        senses: "vision dans le noir 18 m., perception passive 8",
         languages: "Common, Giant",
         cr: "2",
         actions: [
@@ -11279,7 +11279,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Ogre Zombie",
-        size: "Large",
+        size: "G",
         type: "undead",
         subtype: "",
         alignment: "neutral evil",
@@ -11293,7 +11293,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 8",
+        senses: "vision dans le noir 18 m., perception passive 8",
         languages: "understands Common and Giant but can't speak",
         cr: "2",
         traits: [
@@ -11315,10 +11315,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Oni",
-        size: "Large",
+        size: "G",
         type: "giant",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 16,
         hp: 110,
         hit_dice: "13d10 + 38",
@@ -11335,7 +11335,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Common, Giant",
         cr: "7",
         traits: [
@@ -11357,7 +11357,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The oni makes two attacks, either with its claws or its glaive.",
                 attack_bonus: 0
             },
@@ -11377,17 +11377,17 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Change Shape",
-                desc: "The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.",
+                desc: "The oni magically polymorphs into a Small or Medium humanoïde, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoïde form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Orc",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "orc",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 13,
         hp: 15,
         hit_dice: "2d8 + 6",
@@ -11398,7 +11398,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Common, Orc",
         cr: "1/2",
         traits: [
@@ -11427,7 +11427,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Otyugh",
-        size: "Large",
+        size: "G",
         type: "aberration",
         subtype: "",
         alignment: "neutral",
@@ -11441,31 +11441,31 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 11",
+        senses: "vision dans le noir 36 m., perception passive 11",
         languages: "Otyugh",
         cr: "5",
         traits: [
             {
                 name: "Limited Telepathy",
-                desc: "The otyugh can magically transmit simple messages and images to any creature within 36 m. of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.",
+                desc: "The otyugh can magically transmit simple messages and images to any creature within 36 m. of it that can understand a language. This form of télépathie doesn't allow the receiving creature to telepathically respond.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The otyugh makes three attacks: one with its bite and two with its tentacles.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 12 (2d8 + 3) piercing damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured.",
                 attack_bonus: 6,
                 damage_dice: "2d8",
                 damage_bonus: 3
             },
             {
-                name: "Tentacle",
+                name: "Tentacule",
                 desc: "Melee Weapon Attack: +6 to hit, reach 3 m., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 4 (1d8) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 13) and restrained until the grapple ends. The otyugh has two tentacles, each of which can grapple one target.",
                 attack_bonus: 6,
                 damage_dice: "1d8",
@@ -11494,7 +11494,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 13",
+        senses: "vision dans le noir 36 m., perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -11520,7 +11520,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Owlbear",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -11534,7 +11534,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "3",
         traits: [
@@ -11546,7 +11546,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The owlbear makes two attacks: one with its beak and one with its claws.",
                 attack_bonus: 0
             },
@@ -11568,7 +11568,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Panther",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -11582,7 +11582,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "1/4",
         traits: [
@@ -11599,14 +11599,14 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 5 (1d6 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
                 damage_bonus: 2
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 4 (1d4 + 2) slashing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
@@ -11616,7 +11616,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Pegasus",
-        size: "Large",
+        size: "G",
         type: "celestial",
         subtype: "",
         alignment: "chaotic good",
@@ -11631,7 +11631,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 16",
+        senses: "perception passive 16",
         languages:
             "understands Celestial, Common, Elvish, and Sylvan but can't speak",
         cr: "2",
@@ -11647,7 +11647,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Phase Spider",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -11661,7 +11661,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "",
         cr: "3",
         traits: [
@@ -11683,7 +11683,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack_bonus: 4,
                 damage_dice: "1d10",
@@ -11693,10 +11693,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Pit Fiend",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "devil",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 19,
         hp: 300,
         hit_dice: "24d10 + 168",
@@ -11708,8 +11708,8 @@ export const BESTIARY: Monster[] = [
             "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "truesight 36 m., passive Perception 14",
-        languages: "Infernal, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 14",
+        languages: "Infernal, télépathie 36 m.",
         cr: "20",
         traits: [
             {
@@ -11735,19 +11735,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +14 to hit, reach 1.5 m., one target. Hit: 22 (4d6 + 8) piercing damage. The target must succeed on a DC 21 Constitution saving throw or become poisoned. While poisoned in this way, the target can't regain hit points, and it takes 21 (6d6) poison damage at the start of each of its turns. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
                 attack_bonus: 14,
                 damage_dice: "4d6",
                 damage_bonus: 8
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +14 to hit, reach 3 m. , one target. Hit: 17 (2d8 + 8) slashing damage.",
                 attack_bonus: 14,
                 damage_dice: "2d8",
@@ -11761,7 +11761,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 8
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +14 to hit, reach 10ft., one target. Hit: 24 (3d1O + 8) bludgeoning damage.",
                 attack_bonus: 14,
                 damage_dice: "3d10",
@@ -11771,7 +11771,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Planetar",
-        size: "Large",
+        size: "G",
         type: "celestial",
         subtype: "",
         alignment: "lawful good",
@@ -11787,8 +11787,8 @@ export const BESTIARY: Monster[] = [
             "radiant; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "",
         condition_immunities: "charmed, exhaustion, frightened",
-        senses: "truesight 36 m., passive Perception 21",
-        languages: "all, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 21",
+        languages: "all, télépathie 36 m.",
         cr: "16",
         traits: [
             {
@@ -11814,7 +11814,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The planetar makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -11834,21 +11834,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Plesiosaurus",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 13,
         hp: 68,
         hit_dice: "8d10 + 24",
-        speed: "6 m., swim 12 m.",
+        speed: "6 m., nage 12 m.",
         stats: [18, 15, 16, 2, 12, 5],
         skillsaves: [{ perception: 3 }, { stealth: 4 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "2",
         traits: [
@@ -11860,7 +11860,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 3 m., one target. Hit: 14 (3d6 + 4) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "3d6",
@@ -11877,18 +11877,18 @@ export const BESTIARY: Monster[] = [
         ac: 13,
         hp: 2,
         hit_dice: "1d4 + -1",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [2, 16, 11, 1, 10, 3],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., passive Perception 10",
+        senses: "vision aveugle 3 m., perception passive 10",
         languages: "",
         cr: "1/8",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 5,
                 damage_bonus: 1
@@ -11897,21 +11897,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Polar Bear",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 42,
         hit_dice: "5d10 + 14",
-        speed: "12 m., swim 9 m.",
+        speed: "12 m., nage 9 m.",
         stats: [20, 10, 16, 2, 13, 7],
         skillsaves: [{ perception: 3 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "2",
         traits: [
@@ -11923,12 +11923,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The bear makes two attacks: one with its bite and one with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 9 (1d8 + 5) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "1d8",
@@ -11945,7 +11945,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Pony",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -11958,7 +11958,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/8",
         actions: [
@@ -11973,10 +11973,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Priest",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 13,
         hp: 27,
         hit_dice: "5d8 + 4",
@@ -11987,7 +11987,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "any two languages",
         cr: "2",
         traits: [
@@ -12030,7 +12030,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 13",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 13",
         languages: "understands Common and Draconic but can't speak",
         cr: "1/4",
         traits: [
@@ -12057,7 +12057,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 4 (1d4 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
@@ -12088,7 +12088,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 9 m., tremorsense 18 m., passive Perception 9",
+        senses: "vision aveugle 9 m., tremorsense 18 m., perception passive 9",
         languages: "",
         cr: "15",
         traits: [
@@ -12100,12 +12100,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The worm makes two attacks: one with its bite and one with its stinger.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +9 to hit, reach 3 m., one target. Hit: 22 (3d8 + 9) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns.\nIf the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 3 meters of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 6 meters of movement, exiting prone.",
                 attack_bonus: 9,
                 damage_dice: "3d8",
@@ -12125,7 +12125,7 @@ export const BESTIARY: Monster[] = [
         size: "Tiny",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 13,
         hp: 7,
         hit_dice: "3d4 + -1",
@@ -12137,13 +12137,13 @@ export const BESTIARY: Monster[] = [
             "cold; fire; lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 10",
+        senses: "vision dans le noir 36 m., perception passive 10",
         languages: "Abyssal, Common",
         cr: "1",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The quasit can use its action to polymorph into a beast form that resembles a bat (speed 3 m. fly 12 m.), a centipede (12 m., climb 12 m.), or a toad (12 m., swim 12 m.), or back into its true form . Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed . It reverts to its true form if it dies.",
+                desc: "The quasit can use its action to polymorph into a beast form that resembles a bat (speed 3 m. fly 12 m.), a centipede (12 m., climb 12 m.), or a toad (12 m., nage 12 m.), or back into its true form . Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed . It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -12186,13 +12186,13 @@ export const BESTIARY: Monster[] = [
         ac: 13,
         hp: 1,
         hit_dice: "1d4 + -2",
-        speed: "swim 12 m.",
+        speed: "nage 12 m.",
         stats: [2, 16, 9, 1, 7, 2],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 8",
+        senses: "vision dans le noir 18 m., perception passive 8",
         languages: "",
         cr: "0",
         traits: [
@@ -12209,7 +12209,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 1 piercing damage.",
                 attack_bonus: 5,
                 damage_bonus: 1
@@ -12218,10 +12218,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Rakshasa",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 16,
         hp: 110,
         hit_dice: "13d8 + 51",
@@ -12234,7 +12234,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "Common, Infernal",
         cr: "13",
         traits: [
@@ -12251,12 +12251,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The rakshasa makes two claw attacks",
                 attack_bonus: 0
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 9 (2d6 + 2) slashing damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a remove curse spell or similar magic.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -12279,7 +12279,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 10",
+        senses: "vision dans le noir 9 m., perception passive 10",
         languages: "",
         cr: "0",
         traits: [
@@ -12291,7 +12291,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +0 to hit, reach 1.5 m., one target. Hit: 1 piercing damage.",
                 attack_bonus: 0,
                 damage_bonus: 1
@@ -12314,7 +12314,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -12334,10 +12334,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Red Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 17,
         hp: 75,
         hit_dice: "10d8 + 30",
@@ -12354,12 +12354,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "4",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage.",
                 attack_bonus: 6,
                 damage_dice: "1d10 + 1d6",
@@ -12375,21 +12375,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Reef Shark",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
         ac: 12,
         hp: 22,
         hit_dice: "4d8 + 4",
-        speed: "swim 12 m.",
+        speed: "nage 12 m.",
         stats: [14, 13, 13, 1, 10, 4],
         skillsaves: [{ perception: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 9 m., passive Perception 12",
+        senses: "vision aveugle 9 m., perception passive 12",
         languages: "",
         cr: "1/2",
         traits: [
@@ -12406,7 +12406,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 6 (1d8 + 2) piercing damage.",
                 attack_bonus: 4,
                 damage_dice: "1d8",
@@ -12416,7 +12416,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Remorhaz",
-        size: "Huge",
+        size: "TG",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -12429,7 +12429,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold, fire",
         condition_immunities: "",
-        senses: "darkvision 18 m., tremorsense 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., tremorsense 18 m., perception passive 10",
         languages: "",
         cr: "11",
         traits: [
@@ -12442,7 +12442,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +11 to hit, reach 3 m., one target. Hit: 40 (6d10 + 7) piercing damage plus 10 (3d6) fire damage. If the target is a creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the remorhaz can't bite another target.",
                 attack_bonus: 11,
                 damage_dice: "6d10 + 3d6",
@@ -12457,7 +12457,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Rhinoceros",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -12470,7 +12470,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "",
         cr: "2",
         traits: [
@@ -12493,7 +12493,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Riding Horse",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -12506,7 +12506,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "1/4",
         actions: [
@@ -12541,7 +12541,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "11",
         traits: [
@@ -12553,7 +12553,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The roc makes two attacks: one with its beak and one with its talons.",
                 attack_bonus: 0
             },
@@ -12575,7 +12575,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Roper",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral evil",
@@ -12589,7 +12589,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 16",
+        senses: "vision dans le noir 18 m., perception passive 16",
         languages: "",
         cr: "5",
         traits: [
@@ -12611,12 +12611,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 22 (4d8 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "4d8",
@@ -12636,7 +12636,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Rug of Smothering",
-        size: "Large",
+        size: "G",
         type: "construct",
         subtype: "",
         alignment: "unaligned",
@@ -12650,7 +12650,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison, psychic",
         condition_immunities:
             "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 6",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 6",
         languages: "",
         cr: "2",
         traits: [
@@ -12682,7 +12682,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Rust Monster",
-        size: "Medium",
+        size: "M",
         type: "monstrosity",
         subtype: "",
         alignment: "unaligned",
@@ -12695,7 +12695,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "",
         cr: "1/2",
         traits: [
@@ -12712,7 +12712,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 5 (1d8 + 1) piercing damage.",
                 attack_bonus: 3,
                 damage_dice: "1d8",
@@ -12727,7 +12727,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Saber-Toothed Tiger",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -12741,7 +12741,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "2",
         traits: [
@@ -12758,14 +12758,14 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 10 (1d10 + 5) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d10",
                 damage_bonus: 5
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 12 (2d6 + 5) slashing damage.",
                 attack_bonus: 6,
                 damage_dice: "2d6",
@@ -12775,21 +12775,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Sahuagin",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "sahuagin",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 12,
         hp: 22,
         hit_dice: "4d8 + 4",
-        speed: "9 m., swim 12 m.",
+        speed: "9 m., nage 12 m.",
         stats: [13, 11, 12, 12, 13, 9],
         skillsaves: [{ perception: 5 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 15",
+        senses: "vision dans le noir 36 m., perception passive 15",
         languages: "Sahuagin",
         cr: "1/2",
         traits: [
@@ -12805,18 +12805,18 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Shark Telepathy",
-                desc: "The sahuagin can magically command any shark within 36 meters of it, using a limited telepathy.",
+                desc: "The sahuagin can magically command any shark within 36 meters of it, using a limited télépathie.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +3 to hit, reach 1.5 m., one target. Hit: 3 (1d4 + 1) piercing damage.",
                 attack_bonus: 3,
                 damage_dice: "1d4",
@@ -12840,7 +12840,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Salamander",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
         alignment: "neutral evil",
@@ -12854,7 +12854,7 @@ export const BESTIARY: Monster[] = [
             "bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Ignan",
         cr: "5",
         traits: [
@@ -12872,7 +12872,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The salamander makes two attacks: one with its spear and one with its tail.",
                 attack_bonus: 0
             },
@@ -12884,7 +12884,7 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 4
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 7 (2d6) fire damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.",
                 attack_bonus: 7,
                 damage_dice: "2d6 + 2d6",
@@ -12894,7 +12894,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Satyr",
-        size: "Medium",
+        size: "M",
         type: "fey",
         subtype: "",
         alignment: "chaotic neutral",
@@ -12908,7 +12908,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "Common, Elvish, Sylvan",
         cr: "1/2",
         traits: [
@@ -12962,7 +12962,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "blindsight 3 m., passive Perception 9",
+        senses: "vision aveugle 3 m., perception passive 9",
         languages: "",
         cr: "0",
         actions: [
@@ -12976,10 +12976,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Scout",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 13,
         hp: 16,
         hit_dice: "3d8 + 2",
@@ -12995,8 +12995,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 15",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 15",
+        languages: "une langue au choix (généralement le commun)",
         cr: "1/2",
         traits: [
             {
@@ -13007,7 +13007,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The scout makes two melee attacks or two ranged attacks.",
                 attack_bonus: 0
             },
@@ -13029,31 +13029,31 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Sea Hag",
-        size: "Medium",
+        size: "M",
         type: "fey",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 14,
         hp: 52,
         hit_dice: "7d8 + 20",
-        speed: "9 m., swim 12 m.",
+        speed: "9 m., nage 12 m.",
         stats: [16, 13, 16, 12, 12, 13],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 11",
+        senses: "vision dans le noir 18 m., perception passive 11",
         languages: "Aquan, Common, Giant",
         cr: "2",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The hag can breathe air and water.",
                 attack_bonus: 0
             },
             {
                 name: "Horrific Appearance",
-                desc: "Any humanoid that starts its turn within 9 meters of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.\nUnless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag.",
+                desc: "Any humanoïde that starts its turn within 9 meters of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.\nUnless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag.",
                 attack_bonus: 0
             },
             {
@@ -13068,7 +13068,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Hag Eye (Coven Only)",
-                desc: "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 18 meters. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.",
+                desc: "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and vision dans le noir with a radius of 18 meters. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.",
                 attack_bonus: 0
             }
         ],
@@ -13087,7 +13087,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Illusory Appearance",
-                desc: "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.",
+                desc: "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoïde shape. The effect ends if the hag takes a bonus action to end it or if she dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.",
                 attack_bonus: 0
             }
         ]
@@ -13101,13 +13101,13 @@ export const BESTIARY: Monster[] = [
         ac: 11,
         hp: 1,
         hit_dice: "1d4 + -2",
-        speed: "swim 6 m.",
+        speed: "nage 6 m.",
         stats: [1, 12, 8, 1, 10, 2],
         damage_vulnerabilities: "",
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "0",
         traits: [
@@ -13120,10 +13120,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Shadow",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 12,
         hp: 16,
         hit_dice: "3d8 + 2",
@@ -13136,7 +13136,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "necrotic, poison",
         condition_immunities:
             "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "",
         cr: "1/2",
         traits: [
@@ -13159,7 +13159,7 @@ export const BESTIARY: Monster[] = [
         actions: [
             {
                 name: "Strength Drain",
-                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\nIf a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
+                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\nIf a non-evil humanoïde dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
                 attack_bonus: 4,
                 damage_dice: "2d6",
                 damage_bonus: 2
@@ -13168,21 +13168,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Shambling Mound",
-        size: "Large",
+        size: "G",
         type: "plant",
         subtype: "",
         alignment: "unaligned",
         ac: 15,
         hp: 136,
         hit_dice: "16d10 + 48",
-        speed: "6 m., swim 6 m.",
+        speed: "6 m., nage 6 m.",
         stats: [18, 8, 16, 5, 10, 5],
         skillsaves: [{ stealth: 2 }],
         damage_vulnerabilities: "",
         damage_resistances: "cold, fire",
         damage_immunities: "lightning",
         condition_immunities: "blinded, deafened, exhaustion",
-        senses: "blindsight 18 m. (blind beyond this radius), passive Perception 10",
+        senses: "vision aveugle 18 m. (blind beyond this radius), perception passive 10",
         languages: "",
         cr: "5",
         traits: [
@@ -13194,7 +13194,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
                 attack_bonus: 0
             },
@@ -13214,7 +13214,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Shield Guardian",
-        size: "Large",
+        size: "G",
         type: "construct",
         subtype: "",
         alignment: "unaligned",
@@ -13228,7 +13228,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, poisoned",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 10",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 10",
         languages: "understands commands given in any language but can't speak",
         cr: "7",
         traits: [
@@ -13250,7 +13250,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The guardian makes two fist attacks.",
                 attack_bonus: 0
             },
@@ -13272,7 +13272,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Shrieker",
-        size: "Medium",
+        size: "M",
         type: "plant",
         subtype: "",
         alignment: "unaligned",
@@ -13285,7 +13285,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "blinded, deafened, frightened",
-        senses: "blindsight 9 m. (blind beyond this radius), passive Perception 6",
+        senses: "vision aveugle 9 m. (blind beyond this radius), perception passive 6",
         languages: "",
         cr: "0",
         traits: [
@@ -13305,7 +13305,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Silver Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
@@ -13325,12 +13325,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "2",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 9 (1d10 + 4) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d10",
@@ -13346,10 +13346,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Skeleton",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 13,
         hp: 13,
         hit_dice: "2d8 + 4",
@@ -13359,7 +13359,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "understands all languages it spoke in life but can't speak",
         cr: "1/4",
         actions: [
@@ -13381,7 +13381,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Solar",
-        size: "Large",
+        size: "G",
         type: "celestial",
         subtype: "",
         alignment: "lawful good",
@@ -13397,8 +13397,8 @@ export const BESTIARY: Monster[] = [
             "radiant; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "necrotic, poison",
         condition_immunities: "charmed, exhaustion, frightened, poisoned",
-        senses: "truesight 36 m., passive Perception 24",
-        languages: "all, telepathy 36 m.",
+        senses: "truesight 36 m., perception passive 24",
+        languages: "all, télépathie 36 m.",
         cr: "21",
         traits: [
             {
@@ -13424,7 +13424,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The solar makes two greatsword attacks.",
                 attack_bonus: 0
             },
@@ -13473,10 +13473,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Specter",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 12,
         hp: 22,
         hit_dice: "5d8 + -1",
@@ -13488,7 +13488,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "necrotic, poison",
         condition_immunities:
             "charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "understands all languages it knew in life but can't speak",
         cr: "1",
         traits: [
@@ -13528,7 +13528,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 9 m., passive Perception 12",
+        senses: "vision dans le noir 9 m., perception passive 12",
         languages: "",
         cr: "0",
         traits: [
@@ -13550,7 +13550,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.",
                 attack_bonus: 4,
                 damage_bonus: 1
@@ -13559,10 +13559,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Spirit Naga",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 15,
         hp: 75,
         hit_dice: "10d10 + 20",
@@ -13578,7 +13578,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "charmed, poisoned",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "Abyssal, Common",
         cr: "8",
         traits: [
@@ -13590,7 +13590,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one creature. Hit: 7 (1d6 + 4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 7,
                 damage_dice: "1d6",
@@ -13623,7 +13623,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "Common, Elvish, Sylvan",
         cr: "1/4",
         actions: [
@@ -13653,10 +13653,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Spy",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 12,
         hp: 27,
         hit_dice: "6d8",
@@ -13674,7 +13674,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 16",
+        senses: "perception passive 16",
         languages: "any two languages",
         cr: "1",
         traits: [
@@ -13692,7 +13692,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The spy makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -13727,7 +13727,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire, poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Aquan, Ignan",
         cr: "1/4",
         traits: [
@@ -13777,7 +13777,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "",
         cr: "1/8",
         actions: [
@@ -13792,7 +13792,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Stone Giant",
-        size: "Huge",
+        size: "TG",
         type: "giant",
         subtype: "",
         alignment: "neutral",
@@ -13807,7 +13807,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Giant",
         cr: "7",
         traits: [
@@ -13819,7 +13819,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The giant makes two greatclub attacks.",
                 attack_bonus: 0
             },
@@ -13848,7 +13848,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Stone Golem",
-        size: "Large",
+        size: "G",
         type: "construct",
         subtype: "",
         alignment: "unaligned",
@@ -13863,7 +13863,7 @@ export const BESTIARY: Monster[] = [
             "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
         condition_immunities:
             "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-        senses: "darkvision 36 m., passive Perception 10",
+        senses: "vision dans le noir 36 m., perception passive 10",
         languages: "understands the languages of its creator but can't speak",
         cr: "10",
         traits: [
@@ -13885,7 +13885,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The golem makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -13905,14 +13905,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Storm Giant",
-        size: "Huge",
+        size: "TG",
         type: "giant",
         subtype: "",
         alignment: "chaotic good",
         ac: 16,
         hp: 230,
         hit_dice: "20d12 + 100",
-        speed: "15 m., swim 15 m.",
+        speed: "15 m., nage 15 m.",
         stats: [29, 14, 20, 16, 18, 18],
         saves: [
             { strength: 14 },
@@ -13930,12 +13930,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "cold",
         damage_immunities: "lightning, thunder",
         condition_immunities: "",
-        senses: "passive Perception 19",
+        senses: "perception passive 19",
         languages: "Common, Giant",
         cr: "13",
         traits: [
             {
-                name: "Amphibious",
+                name: "Aphibien",
                 desc: "The giant can breathe air and water.",
                 attack_bonus: 0
             },
@@ -13947,7 +13947,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The giant makes two greatsword attacks.",
                 attack_bonus: 0
             },
@@ -13975,7 +13975,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Succubus/Incubus",
-        size: "Medium",
+        size: "M",
         type: "fiend",
         subtype: "shapechanger",
         alignment: "neutral evil",
@@ -13996,18 +13996,18 @@ export const BESTIARY: Monster[] = [
             "cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 15",
-        languages: "Abyssal, Common, Infernal, telepathy 18 m.",
+        senses: "vision dans le noir 18 m., perception passive 15",
+        languages: "Abyssal, Common, Infernal, télépathie 18 m.",
         cr: "4",
         traits: [
             {
                 name: "Telepathic Bond",
-                desc: "The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence.",
+                desc: "The fiend ignores the range restriction on its télépathie when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence.",
                 attack_bonus: 0
             },
             {
                 name: "Shapechanger",
-                desc: "The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The fiend can use its action to polymorph into a Small or Medium humanoïde, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             }
         ],
@@ -14021,7 +14021,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Charm",
-                desc: "One humanoid the fiend can see within 9 meters of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.\nThe fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.",
+                desc: "One humanoïde the fiend can see within 9 meters of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.\nThe fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.",
                 attack_bonus: 0
             },
             {
@@ -14040,7 +14040,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Bats",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14054,13 +14054,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 18 m., passive Perception 11",
+        senses: "vision aveugle 18 m., perception passive 11",
         languages: "",
         cr: "1/4",
         traits: [
             {
                 name: "Echolocation",
-                desc: "The swarm can't use its blindsight while deafened.",
+                desc: "The swarm can't use its vision aveugle while deafened.",
                 attack_bonus: 0
             },
             {
@@ -14085,7 +14085,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Beetles",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14099,7 +14099,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 3 m., passive Perception 8",
+        senses: "vision aveugle 3 m., perception passive 8",
         languages: "",
         cr: "1/2",
         traits: [
@@ -14120,7 +14120,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Centipedes",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14134,7 +14134,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 3 m., passive Perception 8",
+        senses: "vision aveugle 3 m., perception passive 8",
         languages: "",
         cr: "1/2",
         traits: [
@@ -14155,7 +14155,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Insects",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14169,7 +14169,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 3 m., passive Perception 8",
+        senses: "vision aveugle 3 m., perception passive 8",
         languages: "",
         cr: "1/2",
         traits: [
@@ -14190,21 +14190,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Poisonous Snakes",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
         ac: 14,
         hp: 36,
         hit_dice: "8d8",
-        speed: "9 m., swim 9 m.",
+        speed: "9 m., nage 9 m.",
         stats: [8, 18, 11, 1, 10, 3],
         damage_vulnerabilities: "",
         damage_resistances: "bludgeoning, piercing, slashing",
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 3 m., passive Perception 10",
+        senses: "vision aveugle 3 m., perception passive 10",
         languages: "",
         cr: "2",
         traits: [
@@ -14225,21 +14225,21 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Quippers",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
         ac: 13,
         hp: 28,
         hit_dice: "8d8 + -8",
-        speed: "0 m., swim 12 m.",
+        speed: "0 m., nage 12 m.",
         stats: [13, 16, 9, 1, 7, 2],
         damage_vulnerabilities: "",
         damage_resistances: "bludgeoning, piercing, slashing",
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "darkvision 18 m., passive Perception 8",
+        senses: "vision dans le noir 18 m., perception passive 8",
         languages: "",
         cr: "1",
         traits: [
@@ -14270,7 +14270,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Rats",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14284,7 +14284,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "darkvision 9 m., passive Perception 10",
+        senses: "vision dans le noir 9 m., perception passive 10",
         languages: "",
         cr: "1/4",
         traits: [
@@ -14310,7 +14310,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Ravens",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14324,7 +14324,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "passive Perception 15",
+        senses: "perception passive 15",
         languages: "",
         cr: "1/4",
         traits: [
@@ -14345,7 +14345,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Spiders",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14359,7 +14359,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 3 m., passive Perception 8",
+        senses: "vision aveugle 3 m., perception passive 8",
         languages: "",
         cr: "1/2",
         traits: [
@@ -14395,7 +14395,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Swarm of Wasps",
-        size: "Medium",
+        size: "M",
         type: "swarm of Tiny beasts",
         subtype: "",
         alignment: "unaligned",
@@ -14409,7 +14409,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "",
         condition_immunities:
             "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
-        senses: "blindsight 3 m., passive Perception 8",
+        senses: "vision aveugle 3 m., perception passive 8",
         languages: "",
         cr: "1/2",
         traits: [
@@ -14445,12 +14445,12 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "fire, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
         condition_immunities: "charmed, frightened, paralyzed, poisoned",
-        senses: "blindsight 36 m., passive Perception 10",
+        senses: "vision aveugle 36 m., perception passive 10",
         languages: "",
         cr: "30",
         traits: [
             {
-                name: "Legendary Resistance (3/Day)",
+                name: "Résistance légendaire (3/jour)",
                 desc: "If the tarrasque fails a saving throw, it can choose to succeed instead.",
                 attack_bonus: 0
             },
@@ -14472,19 +14472,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tai l. It can use its Swallow instead of its bite.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +19 to hit, reach 3 m., one target. Hit: 36 (4d12 + 10) piercing damage. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the tarrasque can't bite another target.",
                 attack_bonus: 19,
                 damage_dice: "4d12",
                 damage_bonus: 10
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +19 to hit, reach 4.50 m., one target. Hit: 28 (4d8 + 10) slashing damage.",
                 attack_bonus: 19,
                 damage_dice: "4d8",
@@ -14498,14 +14498,14 @@ export const BESTIARY: Monster[] = [
                 damage_bonus: 10
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +19 to hit, reach 6 m., one target. Hit: 24 (4d6 + 10) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be knocked prone.",
                 attack_bonus: 19,
                 damage_dice: "4d6",
                 damage_bonus: 10
             },
             {
-                name: "Frightful Presence",
+                name: "Présence Terrifiante",
                 desc: "Each creature of the tarrasque's choice within 36 meters of it and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the tarrasque's Frightful Presence for the next 24 hours.",
                 attack_bonus: 0
             },
@@ -14535,9 +14535,9 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Thug",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
         alignment: "any non-good alignment",
         ac: 11,
         hp: 32,
@@ -14549,8 +14549,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 10",
+        languages: "une langue au choix (généralement le commun)",
         cr: "1/2",
         traits: [
             {
@@ -14561,7 +14561,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The thug makes two melee attacks.",
                 attack_bonus: 0
             },
@@ -14582,7 +14582,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Tiger",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -14596,7 +14596,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "",
         cr: "1",
         traits: [
@@ -14613,14 +14613,14 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 8 (1d10 + 3) piercing damage.",
                 attack_bonus: 5,
                 damage_dice: "1d10",
                 damage_bonus: 3
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 7 (1d8 + 3) slashing damage.",
                 attack_bonus: 0
             }
@@ -14628,7 +14628,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Treant",
-        size: "Huge",
+        size: "TG",
         type: "plant",
         subtype: "",
         alignment: "chaotic good",
@@ -14641,7 +14641,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "bludgeoning, piercing",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "Common, Druidic, Elvish, Sylvan",
         cr: "9",
         traits: [
@@ -14658,7 +14658,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The treant makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -14685,10 +14685,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Tribal Warrior",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 12,
         hp: 11,
         hit_dice: "2d8 + 2",
@@ -14698,7 +14698,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "any one language",
         cr: "1/8",
         traits: [
@@ -14720,7 +14720,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Triceratops",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -14733,7 +14733,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 10",
+        senses: "perception passive 10",
         languages: "",
         cr: "5",
         traits: [
@@ -14762,10 +14762,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Troll",
-        size: "Large",
+        size: "G",
         type: "giant",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 15,
         hp: 84,
         hit_dice: "8d10 + 40",
@@ -14776,7 +14776,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "Giant",
         cr: "5",
         traits: [
@@ -14798,19 +14798,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The troll makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 7 (1d6 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "1d6",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) slashing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -14820,7 +14820,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Tyrannosaurus Rex",
-        size: "Huge",
+        size: "TG",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -14834,24 +14834,24 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "",
         cr: "8",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The tyrannosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 33 (4d12 + 7) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the tyrannosaurus can't bite another target.",
                 attack_bonus: 10,
                 damage_dice: "4d12",
                 damage_bonus: 7
             },
             {
-                name: "Tail",
+                name: "Queue",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 20 (3d8 + 7) bludgeoning damage.",
                 attack_bonus: 10,
                 damage_dice: "3d8",
@@ -14861,7 +14861,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Unicorn",
-        size: "Large",
+        size: "G",
         type: "celestial",
         subtype: "",
         alignment: "lawful good",
@@ -14874,8 +14874,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "charmed, paralyzed, poisoned",
-        senses: "darkvision 18 m., passive Perception 13",
-        languages: "Celestial, Elvish, Sylvan, telepathy 18 m.",
+        senses: "vision dans le noir 18 m., perception passive 13",
+        languages: "Celestial, Elvish, Sylvan, télépathie 18 m.",
         cr: "5",
         traits: [
             {
@@ -14902,7 +14902,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The unicorn makes two attacks: one with its hooves and one with its horn.",
                 attack_bonus: 0
             },
@@ -14951,10 +14951,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Vampire",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "shapechanger",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 16,
         hp: 144,
         hit_dice: "17d8 + 67",
@@ -14967,7 +14967,7 @@ export const BESTIARY: Monster[] = [
             "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 36 m., passive Perception 17",
+        senses: "vision dans le noir 36 m., perception passive 17",
         languages: "the languages it knew in life",
         cr: "13",
         traits: [
@@ -14977,7 +14977,7 @@ export const BESTIARY: Monster[] = [
                 attack_bonus: 0
             },
             {
-                name: "Legendary Resistance (3/Day)",
+                name: "Résistance légendaire (3/jour)",
                 desc: "If the vampire fails a saving throw, it can choose to succeed instead.",
                 attack_bonus: 0
             },
@@ -15017,14 +15017,14 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Bite (Bat or Vampire Form Only)",
-                desc: "Melee Weapon Attack: +9 to hit, reach 1.5 m., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control.",
+                desc: "Melee Weapon Attack: +9 to hit, reach 1.5 m., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoïde slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control.",
                 attack_bonus: 9,
                 damage_dice: "1d6 + 3d6",
                 damage_bonus: 4
             },
             {
                 name: "Charm",
-                desc: "The vampire targets one humanoid it can see within 9 m. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack.\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
+                desc: "The vampire targets one humanoïde it can see within 9 m. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack.\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
                 attack_bonus: 0
             },
             {
@@ -15053,7 +15053,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Vampire Spawn",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
         alignment: "neutral evil",
@@ -15069,7 +15069,7 @@ export const BESTIARY: Monster[] = [
             "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "the languages it knew in life",
         cr: "5",
         traits: [
@@ -15091,12 +15091,12 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The vampire makes two attacks, only one of which can be a bite attack.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
                 attack_bonus: 61
             },
@@ -15111,10 +15111,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Veteran",
-        size: "Medium",
-        type: "humanoid",
-        subtype: "any race",
-        alignment: "any alignment",
+        size: "M",
+        type: "humanoïde",
+        subtype: "toute race",
+        alignment: "tout alignement",
         ac: 17,
         hp: 58,
         hit_dice: "9d8 + 17",
@@ -15125,12 +15125,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 12",
-        languages: "any one language (usually Common)",
+        senses: "perception passive 12",
+        languages: "une langue au choix (généralement le commun)",
         cr: "3",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
                 attack_bonus: 0
             },
@@ -15159,7 +15159,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Violet Fungus",
-        size: "Medium",
+        size: "M",
         type: "plant",
         subtype: "",
         alignment: "unaligned",
@@ -15172,7 +15172,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "blinded, deafened, frightened",
-        senses: "blindsight 9 m. (blind beyond this radius), passive Perception 6",
+        senses: "vision aveugle 9 m. (blind beyond this radius), perception passive 6",
         languages: "",
         cr: "1/4",
         traits: [
@@ -15184,7 +15184,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The fungus makes 1d4 Rotting Touch attacks.",
                 attack_bonus: 0
             },
@@ -15198,10 +15198,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Vrock",
-        size: "Large",
+        size: "G",
         type: "fiend",
         subtype: "demon",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 15,
         hp: 104,
         hit_dice: "11d10 + 43",
@@ -15213,8 +15213,8 @@ export const BESTIARY: Monster[] = [
             "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "darkvision 36 m., passive Perception 11",
-        languages: "Abyssal, telepathy 36 m.",
+        senses: "vision dans le noir 36 m., perception passive 11",
+        languages: "Abyssal, télépathie 36 m.",
         cr: "6",
         traits: [
             {
@@ -15225,7 +15225,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The vrock makes two attacks: one with its beak and one with its talons.",
                 attack_bonus: 0
             },
@@ -15262,7 +15262,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Vulture",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -15276,7 +15276,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -15302,7 +15302,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Warhorse",
-        size: "Large",
+        size: "G",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -15315,7 +15315,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 11",
+        senses: "perception passive 11",
         languages: "",
         cr: "1/2",
         traits: [
@@ -15337,10 +15337,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Warhorse Skeleton",
-        size: "Large",
+        size: "G",
         type: "undead",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 13,
         hp: 22,
         hit_dice: "3d10 + 5",
@@ -15350,7 +15350,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "exhaustion, poisoned",
-        senses: "darkvision 18 m., passive Perception 9",
+        senses: "vision dans le noir 18 m., perception passive 9",
         languages: "",
         cr: "1/2",
         actions: [
@@ -15365,14 +15365,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Water Elemental",
-        size: "Large",
+        size: "G",
         type: "elemental",
         subtype: "",
         alignment: "neutral",
         ac: 14,
         hp: 114,
         hit_dice: "12d10 + 48",
-        speed: "9 m., swim 27 m.",
+        speed: "9 m., nage 27 m.",
         stats: [18, 14, 18, 5, 10, 8],
         damage_vulnerabilities: "",
         damage_resistances:
@@ -15380,7 +15380,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "poison",
         condition_immunities:
             "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-        senses: "darkvision 18 m., passive Perception 10",
+        senses: "vision dans le noir 18 m., perception passive 10",
         languages: "Aquan",
         cr: "5",
         traits: [
@@ -15397,7 +15397,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The elemental makes two slam attacks.",
                 attack_bonus: 0
             },
@@ -15431,7 +15431,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "0",
         traits: [
@@ -15443,7 +15443,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one creature. Hit: 1 piercing damage.",
                 attack_bonus: 5,
                 damage_bonus: 1
@@ -15452,8 +15452,8 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Werebear",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "human",
         alignment: "neutral good",
         ac: 10,
@@ -15467,13 +15467,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
         condition_immunities: "",
-        senses: "passive Perception 17",
+        senses: "perception passive 17",
         languages: "Common (can't speak in bear form)",
         cr: "5",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it. is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The werebear can use its action to polymorph into a Large bear-humanoïde hybrid or into a Large bear, or back into its true form, which is humanoïde. Its statistics, other than its size and AC, are the same in each form. Any equipment it. is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -15484,13 +15484,13 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
-                desc: "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.",
+                name: "Attaques multiples",
+                desc: "In bear form, the werebear makes two claw attacks. In humanoïde form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoïde.",
                 attack_bonus: 0
             },
             {
                 name: "Bite (Bear or Hybrid Form Only)",
-                desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 15 (2d10 + 4) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with were bear lycanthropy.",
+                desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 15 (2d10 + 4) piercing damage. If the target is a humanoïde, it must succeed on a DC 14 Constitution saving throw or be cursed with were bear lycanthropy.",
                 attack_bonus: 7,
                 damage_dice: "2d10",
                 damage_bonus: 4
@@ -15513,8 +15513,8 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Wereboar",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "human",
         alignment: "neutral evil",
         ac: 10,
@@ -15528,13 +15528,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
         condition_immunities: "",
-        senses: "passive Perception 12",
+        senses: "perception passive 12",
         languages: "Common (can't speak in boar form)",
         cr: "4",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The wereboar can use its action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The wereboar can use its action to polymorph into a boar-humanoïde hybrid or into a boar, or back into its true form, which is humanoïde. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -15564,7 +15564,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Tusks (Boar or Hybrid Form Only)",
-                desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.",
+                desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a humanoïde, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.",
                 attack_bonus: 5,
                 damage_dice: "2d6",
                 damage_bonus: 3
@@ -15573,10 +15573,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Wererat",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "human",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 12,
         hp: 33,
         hit_dice: "6d8 + 6",
@@ -15588,13 +15588,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
         condition_immunities: "",
-        senses: "darkvision 18 m. (rat form only), passive Perception 12",
+        senses: "vision dans le noir 18 m. (rat form only), perception passive 12",
         languages: "Common (can't speak in rat form)",
         cr: "2",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The wererat can use its action to polymorph into a rat-humanoïde hybrid or into a giant rat, or back into its true form, which is humanoïde. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -15611,7 +15611,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Bite (Rat or Hybrid Form Only).",
-                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.",
+                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoïde, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.",
                 attack_bonus: 4,
                 damage_dice: "1d4",
                 damage_bonus: 2
@@ -15634,8 +15634,8 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Weretiger",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "human",
         alignment: "neutral",
         ac: 12,
@@ -15649,13 +15649,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 15",
+        senses: "vision dans le noir 18 m., perception passive 15",
         languages: "Common (can't speak in tiger form)",
         cr: "4",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The weretiger can use its action to polymorph into a tiger-humanoïde hybrid or into a tiger, or back into its true form, which is humanoïde. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -15672,12 +15672,12 @@ export const BESTIARY: Monster[] = [
         actions: [
             {
                 name: "Multiattack (Humanoid or Hybrid Form Only)",
-                desc: "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.",
+                desc: "In humanoïde form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoïde or make two claw attacks.",
                 attack_bonus: 0
             },
             {
                 name: "Bite (Tiger or Hybrid Form Only)",
-                desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 8 (1d10 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy.",
+                desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 8 (1d10 + 3) piercing damage. If the target is a humanoïde, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy.",
                 attack_bonus: 5,
                 damage_dice: "1d10",
                 damage_bonus: 3
@@ -15707,10 +15707,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Werewolf",
-        size: "Medium",
-        type: "humanoid",
+        size: "M",
+        type: "humanoïde",
         subtype: "human",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 11,
         hp: 58,
         hit_dice: "9d8 + 17",
@@ -15722,13 +15722,13 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
         condition_immunities: "",
-        senses: "passive Perception 14",
+        senses: "perception passive 14",
         languages: "Common (can't speak in wolf form)",
         cr: "3",
         traits: [
             {
                 name: "Shapechanger",
-                desc: "The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+                desc: "The werewolf can use its action to polymorph into a wolf-humanoïde hybrid or into a wolf, or back into its true form, which is humanoïde. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
                 attack_bonus: 0
             },
             {
@@ -15745,7 +15745,7 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Bite (Wolf or Hybrid Form Only)",
-                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 6 (1d8 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.",
+                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 6 (1d8 + 2) piercing damage. If the target is a humanoïde, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.",
                 attack_bonus: 4,
                 damage_dice: "1d8",
                 damage_bonus: 2
@@ -15768,14 +15768,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "White Dragon Wyrmling",
-        size: "Medium",
+        size: "M",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 16,
         hp: 32,
         hit_dice: "5d8 + 9",
-        speed: "9 m., burrow 4.50 m., fly 18 m., swim 9 m.",
+        speed: "9 m., burrow 4.50 m., fly 18 m., nage 9 m.",
         stats: [14, 10, 14, 5, 10, 11],
         saves: [
             { dexterity: 2 },
@@ -15788,12 +15788,12 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 3 m., darkvision 18 m., passive Perception 14",
+        senses: "vision aveugle 3 m., vision dans le noir 18 m., perception passive 14",
         languages: "Draconic",
         cr: "2",
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.",
                 attack_bonus: 4,
                 damage_dice: "1d10 + 1d4",
@@ -15809,7 +15809,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Wight",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
         alignment: "neutral evil",
@@ -15824,7 +15824,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities:
             "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 13",
+        senses: "vision dans le noir 18 m., perception passive 13",
         languages: "the languages it knew in life",
         cr: "3",
         traits: [
@@ -15836,13 +15836,13 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack.",
                 attack_bonus: 0
             },
             {
                 name: "Life Drain",
-                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.\nA humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.",
+                desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.\nA humanoïde slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoïde is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.",
                 attack_bonus: 4,
                 damage_dice: "1d6",
                 damage_bonus: 2
@@ -15868,7 +15868,7 @@ export const BESTIARY: Monster[] = [
         size: "Tiny",
         type: "undead",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 19,
         hp: 22,
         hit_dice: "9d4 + -1",
@@ -15880,7 +15880,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "lightning, poison",
         condition_immunities:
             "exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious",
-        senses: "darkvision 36 m., passive Perception 12",
+        senses: "vision dans le noir 36 m., perception passive 12",
         languages: "the languages it knew in life",
         cr: "2",
         traits: [
@@ -15921,7 +15921,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Winter Wolf",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral evil",
@@ -15935,7 +15935,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "passive Perception 15",
+        senses: "perception passive 15",
         languages: "Common, Giant, Winter Wolf",
         cr: "3",
         traits: [
@@ -15957,7 +15957,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
                 attack_bonus: 6,
                 damage_dice: "2d6",
@@ -15973,7 +15973,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Wolf",
-        size: "Medium",
+        size: "M",
         type: "beast",
         subtype: "",
         alignment: "unaligned",
@@ -15987,7 +15987,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "passive Perception 13",
+        senses: "perception passive 13",
         languages: "",
         cr: "1/4",
         traits: [
@@ -16004,7 +16004,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +4 to hit, reach 1.5 m., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
                 attack_bonus: 4,
                 damage_dice: "2d4",
@@ -16014,7 +16014,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Worg",
-        size: "Large",
+        size: "G",
         type: "monstrosity",
         subtype: "",
         alignment: "neutral evil",
@@ -16028,7 +16028,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "Goblin, Worg",
         cr: "1/2",
         traits: [
@@ -16040,7 +16040,7 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +5 to hit, reach 1.5 m., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
                 attack_bonus: 5,
                 damage_dice: "2d6",
@@ -16050,7 +16050,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Wraith",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
         alignment: "neutral evil",
@@ -16065,7 +16065,7 @@ export const BESTIARY: Monster[] = [
         damage_immunities: "necrotic, poison",
         condition_immunities:
             "charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
-        senses: "darkvision 18 m., passive Perception 12",
+        senses: "vision dans le noir 18 m., perception passive 12",
         languages: "the languages it knew in life",
         cr: "5",
         traits: [
@@ -16090,14 +16090,14 @@ export const BESTIARY: Monster[] = [
             },
             {
                 name: "Create Specter",
-                desc: "The wraith targets a humanoid within 3 meters of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.",
+                desc: "The wraith targets a humanoïde within 3 meters of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.",
                 attack_bonus: 0
             }
         ]
     },
     {
         name: "Wyvern",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
         alignment: "unaligned",
@@ -16111,17 +16111,17 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., passive Perception 14",
+        senses: "vision dans le noir 18 m., perception passive 14",
         languages: "",
         cr: "6",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one creature. Hit: 11 (2d6 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -16145,7 +16145,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Xorn",
-        size: "Medium",
+        size: "M",
         type: "elemental",
         subtype: "",
         alignment: "neutral",
@@ -16160,7 +16160,7 @@ export const BESTIARY: Monster[] = [
             "piercing and slashing from nonmagical weapons that aren't adamantine",
         damage_immunities: "",
         condition_immunities: "",
-        senses: "darkvision 18 m., tremorsense 18 m., passive Perception 16",
+        senses: "vision dans le noir 18 m., tremorsense 18 m., perception passive 16",
         languages: "Terran",
         cr: "5",
         traits: [
@@ -16182,19 +16182,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The xorn makes three claw attacks and one bite attack.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 13 (3d6 + 3) piercing damage.",
                 attack_bonus: 6,
                 damage_dice: "3d6",
                 damage_bonus: 3
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +6 to hit, reach 1.5 m., one target. Hit: 6 (1d6 + 3) slashing damage.",
                 attack_bonus: 6,
                 damage_dice: "1d6",
@@ -16204,14 +16204,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Black Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 18,
         hp: 127,
         hit_dice: "15d10 + 44",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [19, 14, 17, 12, 11, 15],
         saves: [
             { dexterity: 5 },
@@ -16222,40 +16222,40 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ perception: 6 }, { stealth: 5 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 16",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 16",
+        languages: "Commun, Draconique",
         cr: "7",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one target. Hit: 15 (2d10 + 4) piercing damage plus 4 (1d8) acid damage.",
                 attack_bonus: 7,
                 damage_dice: "2d10 + 1d8",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) slashing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
                 damage_bonus: 4
             },
             {
-                name: "Acid Breath (Recharge 5-6)",
+                name: "Souffle d'acide (Recharge 5-6)",
                 desc: "The dragon exhales acid in a 9-meter line that is 1.5 meter wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.",
                 attack_bonus: 0,
                 damage_dice: "11d8"
@@ -16264,10 +16264,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Blue Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 152,
         hit_dice: "16d10 + 64",
@@ -16284,24 +16284,24 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 19",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 19",
+        languages: "Commun, Draconique",
         cr: "9",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +9 to hit, reach 3 m., one target. Hit: 16 (2d10 + 5) piercing damage plus 5 (1d10) lightning damage.",
                 attack_bonus: 9,
                 damage_dice: "2d10 + 1d10",
                 damage_bonus: 5
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +9 to hit, reach 1.5 m., one target. Hit: 12 (2d6 + 5) slashing damage.",
                 attack_bonus: 9,
                 damage_dice: "2d6",
@@ -16317,7 +16317,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Brass Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
         alignment: "chaotic good",
@@ -16337,24 +16337,24 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 16",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 16",
+        languages: "Commun, Draconique",
         cr: "6",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one target. Hit: 15 (2d10 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d10",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) slashing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -16370,14 +16370,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Bronze Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
         ac: 18,
         hp: 142,
         hit_dice: "15d10 + 59",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [21, 10, 19, 14, 13, 17],
         saves: [
             { dexterity: 3 },
@@ -16390,31 +16390,31 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "lightning",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 17",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 17",
+        languages: "Commun, Draconique",
         cr: "8",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +8 to hit, reach 3 m., one target. Hit: 16 (2d10 + 5) piercing damage.",
                 attack_bonus: 8,
                 damage_dice: "2d10",
                 damage_bonus: 5
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +8 to hit, reach 1.5 m., one target. Hit: 12 (2d6 + 5) slashing damage.",
                 attack_bonus: 8,
                 damage_dice: "2d6",
@@ -16430,7 +16430,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Copper Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
         alignment: "chaotic good",
@@ -16448,26 +16448,26 @@ export const BESTIARY: Monster[] = [
         skillsaves: [{ deception: 5 }, { perception: 7 }, { stealth: 4 }],
         damage_vulnerabilities: "",
         damage_resistances: "",
-        damage_immunities: "acid",
+        damage_immunities: "acide",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 17",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 17",
+        languages: "Commun, Draconique",
         cr: "7",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one target. Hit: 15 (2d10 + 4) piercing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d10",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) slashing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -16483,14 +16483,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Gold Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
         ac: 18,
         hp: 178,
         hit_dice: "17d10 + 84",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [23, 14, 21, 16, 13, 20],
         saves: [
             { dexterity: 6 },
@@ -16508,31 +16508,31 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 19",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 19",
+        languages: "Commun, Draconique",
         cr: "10",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage.",
                 attack_bonus: 10,
                 damage_dice: "2d10",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +10 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
                 attack_bonus: 10,
                 damage_dice: "2d6",
@@ -16548,14 +16548,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Green Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
-        alignment: "lawful evil",
+        alignment: "loyal mauvais",
         ac: 18,
         hp: 136,
         hit_dice: "16d10 + 48",
-        speed: "12 m., fly 24 m., swim 12 m.",
+        speed: "12 m., fly 24 m., nage 12 m.",
         stats: [19, 12, 17, 16, 13, 15],
         saves: [
             { dexterity: 4 },
@@ -16568,31 +16568,31 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "poison",
         condition_immunities: "poisoned",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 17",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 17",
+        languages: "Commun, Draconique",
         cr: "8",
         traits: [
             {
-                name: "Amphibious",
-                desc: "The dragon can breathe air and water.",
+                name: "Aphibien",
+                desc: "Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
                 attack_bonus: 0
             }
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one target. Hit: 15 (2d10 + 4) piercing damage plus 7 (2d6) poison damage.",
                 attack_bonus: 7,
                 damage_dice: "2d10 + 2d6",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) slashing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -16608,10 +16608,10 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Red Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 18,
         hp: 178,
         hit_dice: "17d10 + 84",
@@ -16628,24 +16628,24 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "fire",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 18",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 18",
+        languages: "Commun, Draconique",
         cr: "10",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage plus 3 (1d6) fire damage.",
                 attack_bonus: 10,
                 damage_dice: "2d10 + 1d6",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +10 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
                 attack_bonus: 10,
                 damage_dice: "2d6",
@@ -16661,7 +16661,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young Silver Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
         alignment: "lawful good",
@@ -16686,24 +16686,24 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 18",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 18",
+        languages: "Commun, Draconique",
         cr: "9",
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +10 to hit, reach 3 m., one target. Hit: 17 (2d10 + 6) piercing damage.",
                 attack_bonus: 10,
                 damage_dice: "2d10",
                 damage_bonus: 6
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +10 to hit, reach 1.5 m., one target. Hit: 13 (2d6 + 6) slashing damage.",
                 attack_bonus: 10,
                 damage_dice: "2d6",
@@ -16719,14 +16719,14 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Young White Dragon",
-        size: "Large",
+        size: "G",
         type: "dragon",
         subtype: "",
-        alignment: "chaotic evil",
+        alignment: "chaotique mauvais",
         ac: 17,
         hp: 133,
         hit_dice: "14d10 + 56",
-        speed: "12 m., burrow 6 m., fly 24 m., swim 12 m.",
+        speed: "12 m., burrow 6 m., vol 24 m., nage 12 m.",
         stats: [18, 10, 18, 6, 11, 12],
         saves: [
             { dexterity: 3 },
@@ -16739,8 +16739,8 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "cold",
         condition_immunities: "",
-        senses: "blindsight 9 m., darkvision 36 m., passive Perception 16",
-        languages: "Common, Draconic",
+        senses: "vision aveugle 9 m., vision dans le noir 36 m., perception passive 16",
+        languages: "Commun, Draconique",
         cr: "6",
         traits: [
             {
@@ -16751,19 +16751,19 @@ export const BESTIARY: Monster[] = [
         ],
         actions: [
             {
-                name: "Multiattack",
+                name: "Attaques multiples",
                 desc: "The dragon makes three attacks: one with its bite and two with its claws.",
                 attack_bonus: 0
             },
             {
-                name: "Bite",
+                name: "Morsure",
                 desc: "Melee Weapon Attack: +7 to hit, reach 3 m., one target. Hit: 15 (2d10 + 4) piercing damage plus 4 (1d8) cold damage.",
                 attack_bonus: 7,
                 damage_dice: "2d10 + 1d8",
                 damage_bonus: 4
             },
             {
-                name: "Claw",
+                name: "Griffes",
                 desc: "Melee Weapon Attack: +7 to hit, reach 1.5 m., one target. Hit: 11 (2d6 + 4) slashing damage.",
                 attack_bonus: 7,
                 damage_dice: "2d6",
@@ -16779,7 +16779,7 @@ export const BESTIARY: Monster[] = [
     },
     {
         name: "Zombie",
-        size: "Medium",
+        size: "M",
         type: "undead",
         subtype: "",
         alignment: "neutral evil",
@@ -16793,7 +16793,7 @@ export const BESTIARY: Monster[] = [
         damage_resistances: "",
         damage_immunities: "",
         condition_immunities: "poisoned",
-        senses: "darkvision 18 m., passive Perception 8",
+        senses: "vision dans le noir 18 m., perception passive 8",
         languages: "understands all languages it spoke in life but can't speak",
         cr: "1/4",
         traits: [
